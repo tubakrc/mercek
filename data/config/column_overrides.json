@@ -1,0 +1,4 @@
+{
+  "_aciklama": "Sadece varsayılan sütun düzeni yanlışsa doldur. Anahtar: sirket/rapor/tablo. Değerler: guncel, onceki, q_guncel, q_onceki veya atla.",
+  "_ornek": {"aselsan/2026_6/gelir": ["guncel", "q_guncel", "onceki", "q_onceki"]}
+}

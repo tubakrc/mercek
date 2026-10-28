@@ -1,0 +1,19 @@
+# Gizli bilgiler
+.env
+.streamlit/secrets.toml
+
+# Ortam
+.venv/
+__pycache__/
+*.pyc
+
+# Ham ve ara veri (PDF'ler repoya girmez)
+data/raw/
+data/interim/
+
+# Yeniden üretilebilir büyük indeks dosyaları (repoya embeddings.npz girer)
+data/index/chroma/
+data/index/embeddings.jsonl
+
+# Diğer
+claude_desktop_config.example.json

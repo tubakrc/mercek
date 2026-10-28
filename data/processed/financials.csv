@@ -1,0 +1,629 @@
+﻿sirket,rapor,tablo,kalem,kolon,donem_baslangic,donem_bitis,deger,birim,etiket
+aselsan,2024_12,bilanco,donen_varliklar,guncel,2024-12-31,2024-12-31,106118918.0,bin TL,Dönen Varlıklar
+aselsan,2024_12,bilanco,donen_varliklar,onceki,2023-12-31,2023-12-31,105228911.0,bin TL,Dönen Varlıklar
+aselsan,2024_12,bilanco,nakit_ve_benzerleri,guncel,2024-12-31,2024-12-31,16637264.0,bin TL,Nakit ve Nakit Benzerleri
+aselsan,2024_12,bilanco,nakit_ve_benzerleri,onceki,2023-12-31,2023-12-31,9543479.0,bin TL,Nakit ve Nakit Benzerleri
+aselsan,2024_12,bilanco,ticari_alacaklar,guncel,2024-12-31,2024-12-31,28355434.0,bin TL,Ticari Alacaklar
+aselsan,2024_12,bilanco,ticari_alacaklar,onceki,2023-12-31,2023-12-31,29732106.0,bin TL,Ticari Alacaklar
+aselsan,2024_12,bilanco,stoklar,guncel,2024-12-31,2024-12-31,43471734.0,bin TL,Stoklar
+aselsan,2024_12,bilanco,stoklar,onceki,2023-12-31,2023-12-31,46455849.0,bin TL,Stoklar
+aselsan,2024_12,bilanco,duran_varliklar,guncel,2024-12-31,2024-12-31,136678593.0,bin TL,Duran Varlıklar
+aselsan,2024_12,bilanco,duran_varliklar,onceki,2023-12-31,2023-12-31,112173590.0,bin TL,Duran Varlıklar
+aselsan,2024_12,bilanco,toplam_varliklar,guncel,2024-12-31,2024-12-31,242797511.0,bin TL,TOPLAM VARLIKLAR
+aselsan,2024_12,bilanco,toplam_varliklar,onceki,2023-12-31,2023-12-31,217402501.0,bin TL,TOPLAM VARLIKLAR
+aselsan,2024_12,bilanco,kisa_vadeli_yukumlulukler,guncel,2024-12-31,2024-12-31,69761393.0,bin TL,Kısa Vadeli Yükümlülükler
+aselsan,2024_12,bilanco,kisa_vadeli_yukumlulukler,onceki,2023-12-31,2023-12-31,72447236.0,bin TL,Kısa Vadeli Yükümlülükler
+aselsan,2024_12,bilanco,kisa_vadeli_borclanmalar,guncel,2024-12-31,2024-12-31,13564768.0,bin TL,Kısa Vadeli Borçlanmalar
+aselsan,2024_12,bilanco,kisa_vadeli_borclanmalar,onceki,2023-12-31,2023-12-31,16879955.0,bin TL,Kısa Vadeli Borçlanmalar
+aselsan,2024_12,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,guncel,2024-12-31,2024-12-31,9270807.0,bin TL,Uzun Vadeli Borçlanmaların Kısa Vadeli Kısımları
+aselsan,2024_12,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,onceki,2023-12-31,2023-12-31,10275255.0,bin TL,Uzun Vadeli Borçlanmaların Kısa Vadeli Kısımları
+aselsan,2024_12,bilanco,uzun_vadeli_yukumlulukler,guncel,2024-12-31,2024-12-31,31676969.0,bin TL,Uzun Vadeli Yükümlülükler
+aselsan,2024_12,bilanco,uzun_vadeli_yukumlulukler,onceki,2023-12-31,2023-12-31,17352761.0,bin TL,Uzun Vadeli Yükümlülükler
+aselsan,2024_12,bilanco,uzun_vadeli_borclanmalar,guncel,2024-12-31,2024-12-31,9726747.0,bin TL,Uzun Vadeli Borçlanmalar
+aselsan,2024_12,bilanco,uzun_vadeli_borclanmalar,onceki,2023-12-31,2023-12-31,1630905.0,bin TL,Uzun Vadeli Borçlanmalar
+aselsan,2024_12,bilanco,ozkaynaklar,guncel,2024-12-31,2024-12-31,141359149.0,bin TL,ÖZKAYNAKLAR
+aselsan,2024_12,bilanco,ozkaynaklar,onceki,2023-12-31,2023-12-31,127602504.0,bin TL,ÖZKAYNAKLAR
+aselsan,2024_12,bilanco,ana_ortaklik_ozkaynaklari,guncel,2024-12-31,2024-12-31,140298941.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+aselsan,2024_12,bilanco,ana_ortaklik_ozkaynaklari,onceki,2023-12-31,2023-12-31,126058597.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+aselsan,2024_12,bilanco,toplam_kaynaklar,guncel,2024-12-31,2024-12-31,242797511.0,bin TL,TOPLAM KAYNAKLAR
+aselsan,2024_12,bilanco,toplam_kaynaklar,onceki,2023-12-31,2023-12-31,217402501.0,bin TL,TOPLAM KAYNAKLAR
+aselsan,2024_12,gelir,hasilat,guncel,2024-01-01,2024-12-31,120205594.0,bin TL,Hasılat
+aselsan,2024_12,gelir,hasilat,onceki,2023-01-01,2023-12-31,106252343.0,bin TL,Hasılat
+aselsan,2024_12,gelir,satislarin_maliyeti,guncel,2024-01-01,2024-12-31,-82047403.0,bin TL,Satışların Maliyeti (-)
+aselsan,2024_12,gelir,satislarin_maliyeti,onceki,2023-01-01,2023-12-31,-77224731.0,bin TL,Satışların Maliyeti (-)
+aselsan,2024_12,gelir,brut_kar,guncel,2024-01-01,2024-12-31,38158191.0,bin TL,BRÜT KÂR
+aselsan,2024_12,gelir,brut_kar,onceki,2023-01-01,2023-12-31,29027612.0,bin TL,BRÜT KÂR
+aselsan,2024_12,gelir,esas_faaliyet_diger_gelir,guncel,2024-01-01,2024-12-31,17478735.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+aselsan,2024_12,gelir,esas_faaliyet_diger_gelir,onceki,2023-01-01,2023-12-31,48391368.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+aselsan,2024_12,gelir,esas_faaliyet_diger_gider,guncel,2024-01-01,2024-12-31,-17097770.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+aselsan,2024_12,gelir,esas_faaliyet_diger_gider,onceki,2023-01-01,2023-12-31,-30562625.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+aselsan,2024_12,gelir,esas_faaliyet_kari,guncel,2024-01-01,2024-12-31,27315635.0,bin TL,ESAS FAALİYET KÂRI
+aselsan,2024_12,gelir,esas_faaliyet_kari,onceki,2023-01-01,2023-12-31,36056785.0,bin TL,ESAS FAALİYET KÂRI
+aselsan,2024_12,gelir,finansman_gelirleri,guncel,2024-01-01,2024-12-31,1768193.0,bin TL,Finansman Gelirleri
+aselsan,2024_12,gelir,finansman_gelirleri,onceki,2023-01-01,2023-12-31,1706117.0,bin TL,Finansman Gelirleri
+aselsan,2024_12,gelir,finansman_giderleri,guncel,2024-01-01,2024-12-31,-6975655.0,bin TL,Finansman Giderleri (-)
+aselsan,2024_12,gelir,finansman_giderleri,onceki,2023-01-01,2023-12-31,-12753697.0,bin TL,Finansman Giderleri (-)
+aselsan,2024_12,gelir,parasal_kazanc_kayip,guncel,2024-01-01,2024-12-31,-13869427.0,bin TL,Parasal kazanç/ (kayıp)
+aselsan,2024_12,gelir,parasal_kazanc_kayip,onceki,2023-01-01,2023-12-31,-14647438.0,bin TL,Parasal kazanç/ (kayıp)
+aselsan,2024_12,gelir,vergi_oncesi_kar,guncel,2024-01-01,2024-12-31,8265853.0,bin TL,SÜRDÜRÜLEN FAALİYETLER VERGİ ÖNCESİ KÂRI
+aselsan,2024_12,gelir,vergi_oncesi_kar,onceki,2023-01-01,2023-12-31,10409179.0,bin TL,SÜRDÜRÜLEN FAALİYETLER VERGİ ÖNCESİ KÂRI
+aselsan,2024_12,gelir,donem_kari,guncel,2024-01-01,2024-12-31,15222719.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KÂRI
+aselsan,2024_12,gelir,donem_kari,onceki,2023-01-01,2023-12-31,10646874.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KÂRI
+aselsan,2024_12,gelir,kgop_payi,guncel,2024-01-01,2024-12-31,-76024.0,bin TL,Kontrol Gücü Olmayan Paylar
+aselsan,2024_12,gelir,kgop_payi,onceki,2023-01-01,2023-12-31,120976.0,bin TL,Kontrol Gücü Olmayan Paylar
+aselsan,2024_12,gelir,ana_ortaklik_payi,guncel,2024-01-01,2024-12-31,15298743.0,bin TL,Ana Ortaklık Payları
+aselsan,2024_12,gelir,ana_ortaklik_payi,onceki,2023-01-01,2023-12-31,10525898.0,bin TL,Ana Ortaklık Payları
+aselsan,2024_12,nakit,isletme_nakit_akisi,guncel,2024-01-01,2024-12-31,21417440.0,bin TL,A. İşletme Faaliyetlerinden Nakit Akışları
+aselsan,2024_12,nakit,isletme_nakit_akisi,onceki,2023-01-01,2023-12-31,12091527.0,bin TL,A. İşletme Faaliyetlerinden Nakit Akışları
+aselsan,2024_12,nakit,yatirim_nakit_akisi,guncel,2024-01-01,2024-12-31,-21347846.0,bin TL,B. Yatırım Faaliyetlerinden Kaynaklanan Nakit Akışları
+aselsan,2024_12,nakit,yatirim_nakit_akisi,onceki,2023-01-01,2023-12-31,-16865758.0,bin TL,B. Yatırım Faaliyetlerinden Kaynaklanan Nakit Akışları
+aselsan,2024_12,nakit,finansman_nakit_akisi,guncel,2024-01-01,2024-12-31,10017341.0,bin TL,C. Finansman Faaliyetlerinden Nakit Akışları
+aselsan,2024_12,nakit,finansman_nakit_akisi,onceki,2023-01-01,2023-12-31,5993544.0,bin TL,C. Finansman Faaliyetlerinden Nakit Akışları
+aselsan,2025_12,bilanco,donen_varliklar,guncel,2025-12-31,2025-12-31,174984061.0,bin TL,Dönen Varlıklar
+aselsan,2025_12,bilanco,donen_varliklar,onceki,2024-12-31,2024-12-31,138901174.0,bin TL,Dönen Varlıklar
+aselsan,2025_12,bilanco,nakit_ve_benzerleri,guncel,2025-12-31,2025-12-31,29086476.0,bin TL,Nakit ve Nakit Benzerleri
+aselsan,2025_12,bilanco,nakit_ve_benzerleri,onceki,2024-12-31,2024-12-31,21776847.0,bin TL,Nakit ve Nakit Benzerleri
+aselsan,2025_12,bilanco,ticari_alacaklar,guncel,2025-12-31,2025-12-31,38859628.0,bin TL,Ticari Alacaklar
+aselsan,2025_12,bilanco,ticari_alacaklar,onceki,2024-12-31,2024-12-31,37114995.0,bin TL,Ticari Alacaklar
+aselsan,2025_12,bilanco,stoklar,guncel,2025-12-31,2025-12-31,73660730.0,bin TL,Stoklar
+aselsan,2025_12,bilanco,stoklar,onceki,2024-12-31,2024-12-31,56901022.0,bin TL,Stoklar
+aselsan,2025_12,bilanco,duran_varliklar,guncel,2025-12-31,2025-12-31,256603268.0,bin TL,Duran Varlıklar
+aselsan,2025_12,bilanco,duran_varliklar,onceki,2024-12-31,2024-12-31,178901344.0,bin TL,Duran Varlıklar
+aselsan,2025_12,bilanco,toplam_varliklar,guncel,2025-12-31,2025-12-31,431587329.0,bin TL,TOPLAM VARLIKLAR
+aselsan,2025_12,bilanco,toplam_varliklar,onceki,2024-12-31,2024-12-31,317802518.0,bin TL,TOPLAM VARLIKLAR
+aselsan,2025_12,bilanco,kisa_vadeli_yukumlulukler,guncel,2025-12-31,2025-12-31,126229330.0,bin TL,Kısa Vadeli Yükümlülükler
+aselsan,2025_12,bilanco,kisa_vadeli_yukumlulukler,onceki,2024-12-31,2024-12-31,91312082.0,bin TL,Kısa Vadeli Yükümlülükler
+aselsan,2025_12,bilanco,kisa_vadeli_borclanmalar,guncel,2025-12-31,2025-12-31,13125911.0,bin TL,Kısa Vadeli Borçlanmalar
+aselsan,2025_12,bilanco,kisa_vadeli_borclanmalar,onceki,2024-12-31,2024-12-31,17755196.0,bin TL,Kısa Vadeli Borçlanmalar
+aselsan,2025_12,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,guncel,2025-12-31,2025-12-31,24902275.0,bin TL,Uzun Vadeli Borçlanmaların Kısa Vadeli Kısımları
+aselsan,2025_12,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,onceki,2024-12-31,2024-12-31,12134745.0,bin TL,Uzun Vadeli Borçlanmaların Kısa Vadeli Kısımları
+aselsan,2025_12,bilanco,uzun_vadeli_yukumlulukler,guncel,2025-12-31,2025-12-31,53571705.0,bin TL,Uzun Vadeli Yükümlülükler
+aselsan,2025_12,bilanco,uzun_vadeli_yukumlulukler,onceki,2024-12-31,2024-12-31,41462618.0,bin TL,Uzun Vadeli Yükümlülükler
+aselsan,2025_12,bilanco,uzun_vadeli_borclanmalar,guncel,2025-12-31,2025-12-31,5028364.0,bin TL,Uzun Vadeli Borçlanmalar
+aselsan,2025_12,bilanco,uzun_vadeli_borclanmalar,onceki,2024-12-31,2024-12-31,12731534.0,bin TL,Uzun Vadeli Borçlanmalar
+aselsan,2025_12,bilanco,ozkaynaklar,guncel,2025-12-31,2025-12-31,251786294.0,bin TL,ÖZKAYNAKLAR
+aselsan,2025_12,bilanco,ozkaynaklar,onceki,2024-12-31,2024-12-31,185027818.0,bin TL,ÖZKAYNAKLAR
+aselsan,2025_12,bilanco,ana_ortaklik_ozkaynaklari,guncel,2025-12-31,2025-12-31,250430356.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+aselsan,2025_12,bilanco,ana_ortaklik_ozkaynaklari,onceki,2024-12-31,2024-12-31,183640090.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+aselsan,2025_12,bilanco,toplam_kaynaklar,guncel,2025-12-31,2025-12-31,431587329.0,bin TL,TOPLAM KAYNAKLAR
+aselsan,2025_12,bilanco,toplam_kaynaklar,onceki,2024-12-31,2024-12-31,317802518.0,bin TL,TOPLAM KAYNAKLAR
+aselsan,2025_12,gelir,hasilat,guncel,2025-01-01,2025-12-31,180444938.0,bin TL,Hasılat
+aselsan,2025_12,gelir,hasilat,onceki,2024-01-01,2024-12-31,157339507.0,bin TL,Hasılat
+aselsan,2025_12,gelir,satislarin_maliyeti,guncel,2025-01-01,2025-12-31,-123017908.0,bin TL,Satışların Maliyeti (-)
+aselsan,2025_12,gelir,satislarin_maliyeti,onceki,2024-01-01,2024-12-31,-107393487.0,bin TL,Satışların Maliyeti (-)
+aselsan,2025_12,gelir,brut_kar,guncel,2025-01-01,2025-12-31,57427030.0,bin TL,BRÜT KÂR
+aselsan,2025_12,gelir,brut_kar,onceki,2024-01-01,2024-12-31,49946020.0,bin TL,BRÜT KÂR
+aselsan,2025_12,gelir,esas_faaliyet_diger_gelir,guncel,2025-01-01,2025-12-31,32480836.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+aselsan,2025_12,gelir,esas_faaliyet_diger_gelir,onceki,2024-01-01,2024-12-31,22878264.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+aselsan,2025_12,gelir,esas_faaliyet_diger_gider,guncel,2025-01-01,2025-12-31,-25115427.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+aselsan,2025_12,gelir,esas_faaliyet_diger_gider,onceki,2024-01-01,2024-12-31,-22379614.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+aselsan,2025_12,gelir,esas_faaliyet_kari,guncel,2025-01-01,2025-12-31,49145855.0,bin TL,ESAS FAALİYET KÂRI
+aselsan,2025_12,gelir,esas_faaliyet_kari,onceki,2024-01-01,2024-12-31,35753980.0,bin TL,ESAS FAALİYET KÂRI
+aselsan,2025_12,gelir,finansman_gelirleri,guncel,2025-01-01,2025-12-31,3553253.0,bin TL,Finansman Gelirleri
+aselsan,2025_12,gelir,finansman_gelirleri,onceki,2024-01-01,2024-12-31,2314423.0,bin TL,Finansman Gelirleri
+aselsan,2025_12,gelir,finansman_giderleri,guncel,2025-01-01,2025-12-31,-13369696.0,bin TL,Finansman Giderleri (-)
+aselsan,2025_12,gelir,finansman_giderleri,onceki,2024-01-01,2024-12-31,-9130574.0,bin TL,Finansman Giderleri (-)
+aselsan,2025_12,gelir,parasal_kazanc_kayip,guncel,2025-01-01,2025-12-31,-13552013.0,bin TL,Parasal kazanç/ (kayıp)
+aselsan,2025_12,gelir,parasal_kazanc_kayip,onceki,2024-01-01,2024-12-31,-18153970.0,bin TL,Parasal kazanç/ (kayıp)
+aselsan,2025_12,gelir,vergi_oncesi_kar,guncel,2025-01-01,2025-12-31,26390612.0,bin TL,SÜRDÜRÜLEN FAALİYETLER VERGİ ÖNCESİ KÂRI
+aselsan,2025_12,gelir,vergi_oncesi_kar,onceki,2024-01-01,2024-12-31,10819340.0,bin TL,SÜRDÜRÜLEN FAALİYETLER VERGİ ÖNCESİ KÂRI
+aselsan,2025_12,gelir,donem_kari,guncel,2025-01-01,2025-12-31,29917727.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KÂRI
+aselsan,2025_12,gelir,donem_kari,onceki,2024-01-01,2024-12-31,19925321.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KÂRI
+aselsan,2025_12,gelir,kgop_payi,guncel,2025-01-01,2025-12-31,-31790.0,bin TL,Kontrol Gücü Olmayan Paylar
+aselsan,2025_12,gelir,kgop_payi,onceki,2024-01-01,2024-12-31,-99510.0,bin TL,Kontrol Gücü Olmayan Paylar
+aselsan,2025_12,gelir,ana_ortaklik_payi,guncel,2025-01-01,2025-12-31,29949517.0,bin TL,Ana Ortaklık Payları
+aselsan,2025_12,gelir,ana_ortaklik_payi,onceki,2024-01-01,2024-12-31,20024831.0,bin TL,Ana Ortaklık Payları
+aselsan,2025_12,nakit,isletme_nakit_akisi,guncel,2025-01-01,2025-12-31,48901969.0,bin TL,A. İşletme Faaliyetlerinden Nakit Akışları
+aselsan,2025_12,nakit,isletme_nakit_akisi,onceki,2024-01-01,2024-12-31,28033716.0,bin TL,A. İşletme Faaliyetlerinden Nakit Akışları
+aselsan,2025_12,nakit,yatirim_nakit_akisi,guncel,2025-01-01,2025-12-31,-38885322.0,bin TL,B. Yatırım Faaliyetlerinden Kaynaklanan Nakit Akışları
+aselsan,2025_12,nakit,yatirim_nakit_akisi,onceki,2024-01-01,2024-12-31,-27942622.0,bin TL,B. Yatırım Faaliyetlerinden Kaynaklanan Nakit Akışları
+aselsan,2025_12,nakit,finansman_nakit_akisi,guncel,2025-01-01,2025-12-31,1958867.0,bin TL,C. Finansman Faaliyetlerinden Nakit Akışları
+aselsan,2025_12,nakit,finansman_nakit_akisi,onceki,2024-01-01,2024-12-31,13111898.0,bin TL,C. Finansman Faaliyetlerinden Nakit Akışları
+aselsan,2026_6,bilanco,donen_varliklar,guncel,2026-06-30,2026-06-30,248765565.0,bin TL,Dönen Varlıklar
+aselsan,2026_6,bilanco,donen_varliklar,onceki,2025-12-31,2025-12-31,206057730.0,bin TL,Dönen Varlıklar
+aselsan,2026_6,bilanco,nakit_ve_benzerleri,guncel,2026-06-30,2026-06-30,39468926.0,bin TL,Nakit ve Nakit Benzerleri
+aselsan,2026_6,bilanco,nakit_ve_benzerleri,onceki,2025-12-31,2025-12-31,34251653.0,bin TL,Nakit ve Nakit Benzerleri
+aselsan,2026_6,bilanco,ticari_alacaklar,guncel,2026-06-30,2026-06-30,47167326.0,bin TL,Ticari Alacaklar
+aselsan,2026_6,bilanco,ticari_alacaklar,onceki,2025-12-31,2025-12-31,45760320.0,bin TL,Ticari Alacaklar
+aselsan,2026_6,bilanco,stoklar,guncel,2026-06-30,2026-06-30,106485325.0,bin TL,Stoklar
+aselsan,2026_6,bilanco,stoklar,onceki,2025-12-31,2025-12-31,86741403.0,bin TL,Stoklar
+aselsan,2026_6,bilanco,duran_varliklar,guncel,2026-06-30,2026-06-30,300982470.0,bin TL,Duran Varlıklar
+aselsan,2026_6,bilanco,duran_varliklar,onceki,2025-12-31,2025-12-31,302170876.0,bin TL,Duran Varlıklar
+aselsan,2026_6,bilanco,toplam_varliklar,guncel,2026-06-30,2026-06-30,549748035.0,bin TL,TOPLAM VARLIKLAR
+aselsan,2026_6,bilanco,toplam_varliklar,onceki,2025-12-31,2025-12-31,508228606.0,bin TL,TOPLAM VARLIKLAR
+aselsan,2026_6,bilanco,kisa_vadeli_yukumlulukler,guncel,2026-06-30,2026-06-30,169003469.0,bin TL,Kısa Vadeli Yükümlülükler
+aselsan,2026_6,bilanco,kisa_vadeli_yukumlulukler,onceki,2025-12-31,2025-12-31,148645135.0,bin TL,Kısa Vadeli Yükümlülükler
+aselsan,2026_6,bilanco,kisa_vadeli_borclanmalar,guncel,2026-06-30,2026-06-30,25398173.0,bin TL,Kısa Vadeli Borçlanmalar
+aselsan,2026_6,bilanco,kisa_vadeli_borclanmalar,onceki,2025-12-31,2025-12-31,15456810.0,bin TL,Kısa Vadeli Borçlanmalar
+aselsan,2026_6,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,guncel,2026-06-30,2026-06-30,39308899.0,bin TL,Uzun Vadeli Borçlanmaların Kısa Vadeli Kısımları
+aselsan,2026_6,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,onceki,2025-12-31,2025-12-31,29324421.0,bin TL,Uzun Vadeli Borçlanmaların Kısa Vadeli Kısımları
+aselsan,2026_6,bilanco,uzun_vadeli_yukumlulukler,guncel,2026-06-30,2026-06-30,72219957.0,bin TL,Uzun Vadeli Yükümlülükler
+aselsan,2026_6,bilanco,uzun_vadeli_yukumlulukler,onceki,2025-12-31,2025-12-31,63084967.0,bin TL,Uzun Vadeli Yükümlülükler
+aselsan,2026_6,bilanco,uzun_vadeli_borclanmalar,guncel,2026-06-30,2026-06-30,8586218.0,bin TL,Uzun Vadeli Borçlanmalar
+aselsan,2026_6,bilanco,uzun_vadeli_borclanmalar,onceki,2025-12-31,2025-12-31,5921301.0,bin TL,Uzun Vadeli Borçlanmalar
+aselsan,2026_6,bilanco,ozkaynaklar,guncel,2026-06-30,2026-06-30,308524609.0,bin TL,ÖZKAYNAKLAR
+aselsan,2026_6,bilanco,ozkaynaklar,onceki,2025-12-31,2025-12-31,296498504.0,bin TL,ÖZKAYNAKLAR
+aselsan,2026_6,bilanco,ana_ortaklik_ozkaynaklari,guncel,2026-06-30,2026-06-30,306744183.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+aselsan,2026_6,bilanco,ana_ortaklik_ozkaynaklari,onceki,2025-12-31,2025-12-31,294901778.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+aselsan,2026_6,bilanco,toplam_kaynaklar,guncel,2026-06-30,2026-06-30,549748035.0,bin TL,TOPLAM KAYNAKLAR
+aselsan,2026_6,bilanco,toplam_kaynaklar,onceki,2025-12-31,2025-12-31,508228606.0,bin TL,TOPLAM KAYNAKLAR
+aselsan,2026_6,gelir,hasilat,guncel,2026-01-01,2026-06-30,88494252.0,bin TL,Hasılat
+aselsan,2026_6,gelir,hasilat,q_guncel,2026-04-01,2026-06-30,51782243.0,bin TL,Hasılat
+aselsan,2026_6,gelir,hasilat,onceki,2025-01-01,2025-06-30,70956004.0,bin TL,Hasılat
+aselsan,2026_6,gelir,hasilat,q_onceki,2025-04-01,2025-06-30,39038714.0,bin TL,Hasılat
+aselsan,2026_6,gelir,satislarin_maliyeti,guncel,2026-01-01,2026-06-30,-60397561.0,bin TL,Satışların Maliyeti (-)
+aselsan,2026_6,gelir,satislarin_maliyeti,q_guncel,2026-04-01,2026-06-30,-34961861.0,bin TL,Satışların Maliyeti (-)
+aselsan,2026_6,gelir,satislarin_maliyeti,onceki,2025-01-01,2025-06-30,-48249151.0,bin TL,Satışların Maliyeti (-)
+aselsan,2026_6,gelir,satislarin_maliyeti,q_onceki,2025-04-01,2025-06-30,-25884838.0,bin TL,Satışların Maliyeti (-)
+aselsan,2026_6,gelir,brut_kar,guncel,2026-01-01,2026-06-30,28096691.0,bin TL,BRÜT KÂR
+aselsan,2026_6,gelir,brut_kar,q_guncel,2026-04-01,2026-06-30,16820382.0,bin TL,BRÜT KÂR
+aselsan,2026_6,gelir,brut_kar,onceki,2025-01-01,2025-06-30,22706853.0,bin TL,BRÜT KÂR
+aselsan,2026_6,gelir,brut_kar,q_onceki,2025-04-01,2025-06-30,13153876.0,bin TL,BRÜT KÂR
+aselsan,2026_6,gelir,esas_faaliyet_diger_gelir,guncel,2026-01-01,2026-06-30,19150189.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+aselsan,2026_6,gelir,esas_faaliyet_diger_gelir,q_guncel,2026-04-01,2026-06-30,10378951.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+aselsan,2026_6,gelir,esas_faaliyet_diger_gelir,onceki,2025-01-01,2025-06-30,23731030.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+aselsan,2026_6,gelir,esas_faaliyet_diger_gelir,q_onceki,2025-04-01,2025-06-30,9406040.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+aselsan,2026_6,gelir,esas_faaliyet_diger_gider,guncel,2026-01-01,2026-06-30,-15513993.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+aselsan,2026_6,gelir,esas_faaliyet_diger_gider,q_guncel,2026-04-01,2026-06-30,-8681515.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+aselsan,2026_6,gelir,esas_faaliyet_diger_gider,onceki,2025-01-01,2025-06-30,-15491536.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+aselsan,2026_6,gelir,esas_faaliyet_diger_gider,q_onceki,2025-04-01,2025-06-30,-5977392.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+aselsan,2026_6,gelir,esas_faaliyet_kari,guncel,2026-01-01,2026-06-30,22530965.0,bin TL,ESAS FAALİYET KÂRI
+aselsan,2026_6,gelir,esas_faaliyet_kari,q_guncel,2026-04-01,2026-06-30,13381516.0,bin TL,ESAS FAALİYET KÂRI
+aselsan,2026_6,gelir,esas_faaliyet_kari,onceki,2025-01-01,2025-06-30,23063703.0,bin TL,ESAS FAALİYET KÂRI
+aselsan,2026_6,gelir,esas_faaliyet_kari,q_onceki,2025-04-01,2025-06-30,12691316.0,bin TL,ESAS FAALİYET KÂRI
+aselsan,2026_6,gelir,finansman_gelirleri,guncel,2026-01-01,2026-06-30,1643140.0,bin TL,Finansman Gelirleri
+aselsan,2026_6,gelir,finansman_gelirleri,q_guncel,2026-04-01,2026-06-30,544926.0,bin TL,Finansman Gelirleri
+aselsan,2026_6,gelir,finansman_gelirleri,onceki,2025-01-01,2025-06-30,2525727.0,bin TL,Finansman Gelirleri
+aselsan,2026_6,gelir,finansman_gelirleri,q_onceki,2025-04-01,2025-06-30,1342695.0,bin TL,Finansman Gelirleri
+aselsan,2026_6,gelir,finansman_giderleri,guncel,2026-01-01,2026-06-30,-6548551.0,bin TL,Finansman Giderleri (-)
+aselsan,2026_6,gelir,finansman_giderleri,q_guncel,2026-04-01,2026-06-30,-3689912.0,bin TL,Finansman Giderleri (-)
+aselsan,2026_6,gelir,finansman_giderleri,onceki,2025-01-01,2025-06-30,-10258434.0,bin TL,Finansman Giderleri (-)
+aselsan,2026_6,gelir,finansman_giderleri,q_onceki,2025-04-01,2025-06-30,-5644817.0,bin TL,Finansman Giderleri (-)
+aselsan,2026_6,gelir,parasal_kazanc_kayip,guncel,2026-01-01,2026-06-30,-6396603.0,bin TL,Parasal kazanç/ (kayıp)
+aselsan,2026_6,gelir,parasal_kazanc_kayip,q_guncel,2026-04-01,2026-06-30,-284202.0,bin TL,Parasal kazanç/ (kayıp)
+aselsan,2026_6,gelir,parasal_kazanc_kayip,onceki,2025-01-01,2025-06-30,-18476571.0,bin TL,Parasal kazanç/ (kayıp)
+aselsan,2026_6,gelir,parasal_kazanc_kayip,q_onceki,2025-04-01,2025-06-30,-8637203.0,bin TL,Parasal kazanç/ (kayıp)
+aselsan,2026_6,gelir,vergi_oncesi_kar,guncel,2026-01-01,2026-06-30,12650324.0,bin TL,ÖNCESİ KÂRI
+aselsan,2026_6,gelir,vergi_oncesi_kar,q_guncel,2026-04-01,2026-06-30,10376136.0,bin TL,ÖNCESİ KÂRI
+aselsan,2026_6,gelir,vergi_oncesi_kar,onceki,2025-01-01,2025-06-30,-3151236.0,bin TL,ÖNCESİ KÂRI
+aselsan,2026_6,gelir,vergi_oncesi_kar,q_onceki,2025-04-01,2025-06-30,-160535.0,bin TL,ÖNCESİ KÂRI
+aselsan,2026_6,gelir,donem_kari,guncel,2026-01-01,2026-06-30,14449834.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KÂRI
+aselsan,2026_6,gelir,donem_kari,q_guncel,2026-04-01,2026-06-30,8511142.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KÂRI
+aselsan,2026_6,gelir,donem_kari,onceki,2025-01-01,2025-06-30,8468992.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KÂRI
+aselsan,2026_6,gelir,donem_kari,q_onceki,2025-04-01,2025-06-30,5481149.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KÂRI
+aselsan,2026_6,gelir,kgop_payi,guncel,2026-01-01,2026-06-30,10528.0,bin TL,Kontrol Gücü Olmayan Paylar
+aselsan,2026_6,gelir,kgop_payi,q_guncel,2026-04-01,2026-06-30,-325.0,bin TL,Kontrol Gücü Olmayan Paylar
+aselsan,2026_6,gelir,kgop_payi,onceki,2025-01-01,2025-06-30,7748.0,bin TL,Kontrol Gücü Olmayan Paylar
+aselsan,2026_6,gelir,kgop_payi,q_onceki,2025-04-01,2025-06-30,205667.0,bin TL,Kontrol Gücü Olmayan Paylar
+aselsan,2026_6,gelir,ana_ortaklik_payi,guncel,2026-01-01,2026-06-30,14439306.0,bin TL,Ana Ortaklık Payları
+aselsan,2026_6,gelir,ana_ortaklik_payi,q_guncel,2026-04-01,2026-06-30,8511467.0,bin TL,Ana Ortaklık Payları
+aselsan,2026_6,gelir,ana_ortaklik_payi,onceki,2025-01-01,2025-06-30,8461244.0,bin TL,Ana Ortaklık Payları
+aselsan,2026_6,gelir,ana_ortaklik_payi,q_onceki,2025-04-01,2025-06-30,5275482.0,bin TL,Ana Ortaklık Payları
+aselsan,2026_6,nakit,isletme_nakit_akisi,guncel,2026-01-01,2026-06-30,15206440.0,bin TL,A. İşletme Faaliyetlerinden Nakit Akışları
+aselsan,2026_6,nakit,isletme_nakit_akisi,onceki,2025-01-01,2025-06-30,18013334.0,bin TL,A. İşletme Faaliyetlerinden Nakit Akışları
+aselsan,2026_6,nakit,yatirim_nakit_akisi,guncel,2026-01-01,2026-06-30,-33537708.0,bin TL,B. Yatırım Faaliyetlerinden Kaynaklanan Nakit Akışları
+aselsan,2026_6,nakit,yatirim_nakit_akisi,onceki,2025-01-01,2025-06-30,-16934728.0,bin TL,B. Yatırım Faaliyetlerinden Kaynaklanan Nakit Akışları
+aselsan,2026_6,nakit,finansman_nakit_akisi,guncel,2026-01-01,2026-06-30,27717459.0,bin TL,C. Finansman Faaliyetlerinden Nakit Akışları
+aselsan,2026_6,nakit,finansman_nakit_akisi,onceki,2025-01-01,2025-06-30,-2546005.0,bin TL,C. Finansman Faaliyetlerinden Nakit Akışları
+bim,2024_12,bilanco,donen_varliklar,guncel,2024-12-31,2024-12-31,74041405.0,bin TL,Dönen Varlıklar
+bim,2024_12,bilanco,donen_varliklar,onceki,2023-12-31,2023-12-31,78627174.0,bin TL,Dönen Varlıklar
+bim,2024_12,bilanco,nakit_ve_benzerleri,guncel,2024-12-31,2024-12-31,2815106.0,bin TL,Nakit ve Nakit Benzerleri
+bim,2024_12,bilanco,nakit_ve_benzerleri,onceki,2023-12-31,2023-12-31,5207428.0,bin TL,Nakit ve Nakit Benzerleri
+bim,2024_12,bilanco,ticari_alacaklar,guncel,2024-12-31,2024-12-31,23731480.0,bin TL,Ticari Alacaklar
+bim,2024_12,bilanco,ticari_alacaklar,onceki,2023-12-31,2023-12-31,23281120.0,bin TL,Ticari Alacaklar
+bim,2024_12,bilanco,stoklar,guncel,2024-12-31,2024-12-31,37085931.0,bin TL,Stoklar
+bim,2024_12,bilanco,stoklar,onceki,2023-12-31,2023-12-31,39455421.0,bin TL,Stoklar
+bim,2024_12,bilanco,duran_varliklar,guncel,2024-12-31,2024-12-31,161807410.0,bin TL,Duran Varlıklar
+bim,2024_12,bilanco,duran_varliklar,onceki,2023-12-31,2023-12-31,135245043.0,bin TL,Duran Varlıklar
+bim,2024_12,bilanco,toplam_varliklar,guncel,2024-12-31,2024-12-31,235848815.0,bin TL,Toplam Varlıklar
+bim,2024_12,bilanco,toplam_varliklar,onceki,2023-12-31,2023-12-31,213872217.0,bin TL,Toplam Varlıklar
+bim,2024_12,bilanco,kisa_vadeli_yukumlulukler,guncel,2024-12-31,2024-12-31,74673138.0,bin TL,Kısa Vadeli Yükümlülükler
+bim,2024_12,bilanco,kisa_vadeli_yukumlulukler,onceki,2023-12-31,2023-12-31,78071363.0,bin TL,Kısa Vadeli Yükümlülükler
+bim,2024_12,bilanco,kisa_vadeli_borclanmalar,guncel,2024-12-31,2024-12-31,8146338.0,bin TL,Kısa Vadeli Borçlanmalar
+bim,2024_12,bilanco,kisa_vadeli_borclanmalar,onceki,2023-12-31,2023-12-31,6726362.0,bin TL,Kısa Vadeli Borçlanmalar
+bim,2024_12,bilanco,kiralama_borclari_kv,guncel,2024-12-31,2024-12-31,8146338.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2024_12,bilanco,kiralama_borclari_kv,onceki,2023-12-31,2023-12-31,6726362.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2024_12,bilanco,uzun_vadeli_yukumlulukler,guncel,2024-12-31,2024-12-31,42636979.0,bin TL,Uzun Vadeli Yükümlülükler
+bim,2024_12,bilanco,uzun_vadeli_yukumlulukler,onceki,2023-12-31,2023-12-31,35108595.0,bin TL,Uzun Vadeli Yükümlülükler
+bim,2024_12,bilanco,uzun_vadeli_borclanmalar,guncel,2024-12-31,2024-12-31,28829650.0,bin TL,Uzun Vadeli Borçlanmalar
+bim,2024_12,bilanco,uzun_vadeli_borclanmalar,onceki,2023-12-31,2023-12-31,25524908.0,bin TL,Uzun Vadeli Borçlanmalar
+bim,2024_12,bilanco,kiralama_borclari_uv,guncel,2024-12-31,2024-12-31,28829650.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2024_12,bilanco,kiralama_borclari_uv,onceki,2023-12-31,2023-12-31,25524908.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2024_12,bilanco,ozkaynaklar,guncel,2024-12-31,2024-12-31,118538698.0,bin TL,Özkaynaklar
+bim,2024_12,bilanco,ozkaynaklar,onceki,2023-12-31,2023-12-31,100692259.0,bin TL,Özkaynaklar
+bim,2024_12,bilanco,ana_ortaklik_ozkaynaklari,guncel,2024-12-31,2024-12-31,117640111.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+bim,2024_12,bilanco,ana_ortaklik_ozkaynaklari,onceki,2023-12-31,2023-12-31,99783031.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+bim,2024_12,bilanco,toplam_kaynaklar,guncel,2024-12-31,2024-12-31,235848815.0,bin TL,Toplam Kaynaklar
+bim,2024_12,bilanco,toplam_kaynaklar,onceki,2023-12-31,2023-12-31,213872217.0,bin TL,Toplam Kaynaklar
+bim,2024_12,gelir,hasilat,guncel,2024-01-01,2024-12-31,519566633.0,bin TL,Hasılat
+bim,2024_12,gelir,hasilat,onceki,2023-01-01,2023-12-31,474200415.0,bin TL,Hasılat
+bim,2024_12,gelir,satislarin_maliyeti,guncel,2024-01-01,2024-12-31,-428749498.0,bin TL,Satışların Maliyeti (-)
+bim,2024_12,gelir,satislarin_maliyeti,onceki,2023-01-01,2023-12-31,-399581632.0,bin TL,Satışların Maliyeti (-)
+bim,2024_12,gelir,brut_kar,guncel,2024-01-01,2024-12-31,90817135.0,bin TL,BRÜT KAR
+bim,2024_12,gelir,brut_kar,onceki,2023-01-01,2023-12-31,74618783.0,bin TL,BRÜT KAR
+bim,2024_12,gelir,esas_faaliyet_diger_gelir,guncel,2024-01-01,2024-12-31,1071172.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+bim,2024_12,gelir,esas_faaliyet_diger_gelir,onceki,2023-01-01,2023-12-31,2175879.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+bim,2024_12,gelir,esas_faaliyet_diger_gider,guncel,2024-01-01,2024-12-31,-1114758.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+bim,2024_12,gelir,esas_faaliyet_diger_gider,onceki,2023-01-01,2023-12-31,-1307754.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+bim,2024_12,gelir,esas_faaliyet_kari,guncel,2024-01-01,2024-12-31,5301727.0,bin TL,ESAS FAALİYET KARI
+bim,2024_12,gelir,esas_faaliyet_kari,onceki,2023-01-01,2023-12-31,5717514.0,bin TL,ESAS FAALİYET KARI
+bim,2024_12,gelir,finansman_gelirleri,guncel,2024-01-01,2024-12-31,105796.0,bin TL,Finansman Gelirleri
+bim,2024_12,gelir,finansman_gelirleri,onceki,2023-01-01,2023-12-31,570249.0,bin TL,Finansman Gelirleri
+bim,2024_12,gelir,finansman_giderleri,guncel,2024-01-01,2024-12-31,-5203019.0,bin TL,Finansman Giderleri (-)
+bim,2024_12,gelir,finansman_giderleri,onceki,2023-01-01,2023-12-31,-4009657.0,bin TL,Finansman Giderleri (-)
+bim,2024_12,gelir,parasal_kazanc_kayip,guncel,2024-01-01,2024-12-31,21622007.0,bin TL,Parasal Kazanç/(Kayıp)
+bim,2024_12,gelir,parasal_kazanc_kayip,onceki,2023-01-01,2023-12-31,28324779.0,bin TL,Parasal Kazanç/(Kayıp)
+bim,2024_12,gelir,vergi_oncesi_kar,guncel,2024-01-01,2024-12-31,25933562.0,bin TL,VERGİ ÖNCESİ KARI
+bim,2024_12,gelir,vergi_oncesi_kar,onceki,2023-01-01,2023-12-31,31827741.0,bin TL,VERGİ ÖNCESİ KARI
+bim,2024_12,gelir,donem_kari,guncel,2024-01-01,2024-12-31,18612946.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KARI
+bim,2024_12,gelir,donem_kari,onceki,2023-01-01,2023-12-31,22299719.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KARI
+bim,2024_12,gelir,ana_ortaklik_payi,guncel,2024-01-01,2024-12-31,18586744.0,bin TL,Ana Ortaklık Payları
+bim,2024_12,gelir,ana_ortaklik_payi,onceki,2023-01-01,2023-12-31,22293141.0,bin TL,Ana Ortaklık Payları
+bim,2024_12,gelir,kgop_payi,guncel,2024-01-01,2024-12-31,26202.0,bin TL,Kontrol Gücü Olmayan Paylar
+bim,2024_12,gelir,kgop_payi,onceki,2023-01-01,2023-12-31,6578.0,bin TL,Kontrol Gücü Olmayan Paylar
+bim,2024_12,nakit,isletme_nakit_akisi,guncel,2024-01-01,2024-12-31,31204109.0,bin TL,A. İŞLETME FAALİYETLERİNDEN ELDE EDİLEN NAKİT AKIŞLARI
+bim,2024_12,nakit,isletme_nakit_akisi,onceki,2023-01-01,2023-12-31,30234533.0,bin TL,A. İŞLETME FAALİYETLERİNDEN ELDE EDİLEN NAKİT AKIŞLARI
+bim,2024_12,nakit,yatirim_nakit_akisi,guncel,2024-01-01,2024-12-31,-16930052.0,bin TL,B. YATIRIM FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2024_12,nakit,yatirim_nakit_akisi,onceki,2023-01-01,2023-12-31,-17520944.0,bin TL,B. YATIRIM FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2024_12,nakit,finansman_nakit_akisi,guncel,2024-01-01,2024-12-31,-15837437.0,bin TL,C. FİNANSMAN FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2024_12,nakit,finansman_nakit_akisi,onceki,2023-01-01,2023-12-31,-11793850.0,bin TL,C. FİNANSMAN FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2025_12,bilanco,donen_varliklar,guncel,2025-12-31,2025-12-31,111487229.0,bin TL,Dönen Varlıklar
+bim,2025_12,bilanco,donen_varliklar,onceki,2024-12-31,2024-12-31,96914519.0,bin TL,Dönen Varlıklar
+bim,2025_12,bilanco,nakit_ve_benzerleri,guncel,2025-12-31,2025-12-31,3460632.0,bin TL,Nakit ve Nakit Benzerleri
+bim,2025_12,bilanco,nakit_ve_benzerleri,onceki,2024-12-31,2024-12-31,3684758.0,bin TL,Nakit ve Nakit Benzerleri
+bim,2025_12,bilanco,ticari_alacaklar,guncel,2025-12-31,2025-12-31,34807293.0,bin TL,Ticari Alacaklar
+bim,2025_12,bilanco,ticari_alacaklar,onceki,2024-12-31,2024-12-31,31062687.0,bin TL,Ticari Alacaklar
+bim,2025_12,bilanco,stoklar,guncel,2025-12-31,2025-12-31,54447493.0,bin TL,Stoklar
+bim,2025_12,bilanco,stoklar,onceki,2024-12-31,2024-12-31,48542639.0,bin TL,Stoklar
+bim,2025_12,bilanco,duran_varliklar,guncel,2025-12-31,2025-12-31,226606155.0,bin TL,Duran Varlıklar
+bim,2025_12,bilanco,duran_varliklar,onceki,2024-12-31,2024-12-31,211793485.0,bin TL,Duran Varlıklar
+bim,2025_12,bilanco,toplam_varliklar,guncel,2025-12-31,2025-12-31,338093384.0,bin TL,Toplam Varlıklar
+bim,2025_12,bilanco,toplam_varliklar,onceki,2024-12-31,2024-12-31,308708004.0,bin TL,Toplam Varlıklar
+bim,2025_12,bilanco,kisa_vadeli_yukumlulukler,guncel,2025-12-31,2025-12-31,108356980.0,bin TL,Kısa Vadeli Yükümlülükler
+bim,2025_12,bilanco,kisa_vadeli_yukumlulukler,onceki,2024-12-31,2024-12-31,97741409.0,bin TL,Kısa Vadeli Yükümlülükler
+bim,2025_12,bilanco,kisa_vadeli_borclanmalar,guncel,2025-12-31,2025-12-31,13043946.0,bin TL,Kısa Vadeli Borçlanmalar
+bim,2025_12,bilanco,kisa_vadeli_borclanmalar,onceki,2024-12-31,2024-12-31,10662931.0,bin TL,Kısa Vadeli Borçlanmalar
+bim,2025_12,bilanco,banka_kredileri,guncel,2025-12-31,2025-12-31,870698.0,bin TL,Banka Kredileri
+bim,2025_12,bilanco,banka_kredileri,onceki,2024-12-31,2024-12-31,0.0,bin TL,Banka Kredileri
+bim,2025_12,bilanco,kiralama_borclari_kv,guncel,2025-12-31,2025-12-31,12173248.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2025_12,bilanco,kiralama_borclari_kv,onceki,2024-12-31,2024-12-31,10662931.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2025_12,bilanco,uzun_vadeli_yukumlulukler,guncel,2025-12-31,2025-12-31,62641837.0,bin TL,Uzun Vadeli Yükümlülükler
+bim,2025_12,bilanco,uzun_vadeli_yukumlulukler,onceki,2024-12-31,2024-12-31,55808533.0,bin TL,Uzun Vadeli Yükümlülükler
+bim,2025_12,bilanco,uzun_vadeli_borclanmalar,guncel,2025-12-31,2025-12-31,39682422.0,bin TL,Uzun Vadeli Borçlanmalar
+bim,2025_12,bilanco,uzun_vadeli_borclanmalar,onceki,2024-12-31,2024-12-31,37735800.0,bin TL,Uzun Vadeli Borçlanmalar
+bim,2025_12,bilanco,kiralama_borclari_uv,guncel,2025-12-31,2025-12-31,39682422.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2025_12,bilanco,kiralama_borclari_uv,onceki,2024-12-31,2024-12-31,37735800.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2025_12,bilanco,ozkaynaklar,guncel,2025-12-31,2025-12-31,167094567.0,bin TL,Özkaynaklar
+bim,2025_12,bilanco,ozkaynaklar,onceki,2024-12-31,2024-12-31,155158062.0,bin TL,Özkaynaklar
+bim,2025_12,bilanco,ana_ortaklik_ozkaynaklari,guncel,2025-12-31,2025-12-31,165584579.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+bim,2025_12,bilanco,ana_ortaklik_ozkaynaklari,onceki,2024-12-31,2024-12-31,153981881.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+bim,2025_12,bilanco,toplam_kaynaklar,guncel,2025-12-31,2025-12-31,338093384.0,bin TL,Toplam Kaynaklar
+bim,2025_12,bilanco,toplam_kaynaklar,onceki,2024-12-31,2024-12-31,308708004.0,bin TL,Toplam Kaynaklar
+bim,2025_12,gelir,hasilat,guncel,2025-01-01,2025-12-31,721062506.0,bin TL,Hasılat
+bim,2025_12,gelir,hasilat,onceki,2024-01-01,2024-12-31,680072863.0,bin TL,Hasılat
+bim,2025_12,gelir,satislarin_maliyeti,guncel,2025-01-01,2025-12-31,-581615796.0,bin TL,Satışların Maliyeti (-)
+bim,2025_12,gelir,satislarin_maliyeti,onceki,2024-01-01,2024-12-31,-561200201.0,bin TL,Satışların Maliyeti (-)
+bim,2025_12,gelir,brut_kar,guncel,2025-01-01,2025-12-31,139446710.0,bin TL,BRÜT KAR
+bim,2025_12,gelir,brut_kar,onceki,2024-01-01,2024-12-31,118872662.0,bin TL,BRÜT KAR
+bim,2025_12,gelir,esas_faaliyet_diger_gelir,guncel,2025-01-01,2025-12-31,2037753.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+bim,2025_12,gelir,esas_faaliyet_diger_gelir,onceki,2024-01-01,2024-12-31,1402082.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+bim,2025_12,gelir,esas_faaliyet_diger_gider,guncel,2025-01-01,2025-12-31,-2939466.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+bim,2025_12,gelir,esas_faaliyet_diger_gider,onceki,2024-01-01,2024-12-31,-1459133.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+bim,2025_12,gelir,esas_faaliyet_kari,guncel,2025-01-01,2025-12-31,15946069.0,bin TL,ESAS FAALİYET KARI
+bim,2025_12,gelir,esas_faaliyet_kari,onceki,2024-01-01,2024-12-31,6939553.0,bin TL,ESAS FAALİYET KARI
+bim,2025_12,gelir,finansman_gelirleri,guncel,2025-01-01,2025-12-31,108190.0,bin TL,Finansman Gelirleri
+bim,2025_12,gelir,finansman_gelirleri,onceki,2024-01-01,2024-12-31,138479.0,bin TL,Finansman Gelirleri
+bim,2025_12,gelir,finansman_giderleri,guncel,2025-01-01,2025-12-31,-8183392.0,bin TL,Finansman Giderleri (-)
+bim,2025_12,gelir,finansman_giderleri,onceki,2024-01-01,2024-12-31,-6810353.0,bin TL,Finansman Giderleri (-)
+bim,2025_12,gelir,parasal_kazanc_kayip,guncel,2025-01-01,2025-12-31,18203467.0,bin TL,Parasal Kazanç/(Kayıp)
+bim,2025_12,gelir,parasal_kazanc_kayip,onceki,2024-01-01,2024-12-31,28301550.0,bin TL,Parasal Kazanç/(Kayıp)
+bim,2025_12,gelir,vergi_oncesi_kar,guncel,2025-01-01,2025-12-31,31592732.0,bin TL,VERGİ ÖNCESİ KARI
+bim,2025_12,gelir,vergi_oncesi_kar,onceki,2024-01-01,2024-12-31,33945043.0,bin TL,VERGİ ÖNCESİ KARI
+bim,2025_12,gelir,donem_kari,guncel,2025-01-01,2025-12-31,18735256.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KARI
+bim,2025_12,gelir,donem_kari,onceki,2024-01-01,2024-12-31,24362918.0,bin TL,SÜRDÜRÜLEN FAALİYETLER DÖNEM KARI
+bim,2025_12,gelir,ana_ortaklik_payi,guncel,2025-01-01,2025-12-31,18632108.0,bin TL,Ana Ortaklık Payları
+bim,2025_12,gelir,ana_ortaklik_payi,onceki,2024-01-01,2024-12-31,24328622.0,bin TL,Ana Ortaklık Payları
+bim,2025_12,gelir,kgop_payi,guncel,2025-01-01,2025-12-31,103148.0,bin TL,Kontrol Gücü Olmayan Paylar
+bim,2025_12,gelir,kgop_payi,onceki,2024-01-01,2024-12-31,34296.0,bin TL,Kontrol Gücü Olmayan Paylar
+bim,2025_12,nakit,isletme_nakit_akisi,guncel,2025-01-01,2025-12-31,40903032.0,bin TL,A. İŞLETME FAALİYETLERİNDEN ELDE EDİLEN NAKİT AKIŞLARI
+bim,2025_12,nakit,isletme_nakit_akisi,onceki,2024-01-01,2024-12-31,40843784.0,bin TL,A. İŞLETME FAALİYETLERİNDEN ELDE EDİLEN NAKİT AKIŞLARI
+bim,2025_12,nakit,yatirim_nakit_akisi,guncel,2025-01-01,2025-12-31,-21108609.0,bin TL,B. YATIRIM FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2025_12,nakit,yatirim_nakit_akisi,onceki,2024-01-01,2024-12-31,-22160139.0,bin TL,B. YATIRIM FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2025_12,nakit,finansman_nakit_akisi,guncel,2025-01-01,2025-12-31,-19125094.0,bin TL,C. FİNANSMAN FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2025_12,nakit,finansman_nakit_akisi,onceki,2024-01-01,2024-12-31,-20729990.0,bin TL,C. FİNANSMAN FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2026_6,bilanco,donen_varliklar,guncel,2026-06-30,2026-06-30,152411807.0,bin TL,Dönen Varlıklar
+bim,2026_6,bilanco,donen_varliklar,onceki,2025-12-31,2025-12-31,131282045.0,bin TL,Dönen Varlıklar
+bim,2026_6,bilanco,nakit_ve_benzerleri,guncel,2026-06-30,2026-06-30,4325864.0,bin TL,Nakit ve Nakit Benzerleri
+bim,2026_6,bilanco,nakit_ve_benzerleri,onceki,2025-12-31,2025-12-31,4075075.0,bin TL,Nakit ve Nakit Benzerleri
+bim,2026_6,bilanco,ticari_alacaklar,guncel,2026-06-30,2026-06-30,42525418.0,bin TL,Ticari Alacaklar
+bim,2026_6,bilanco,ticari_alacaklar,onceki,2025-12-31,2025-12-31,40987408.0,bin TL,Ticari Alacaklar
+bim,2026_6,bilanco,stoklar,guncel,2026-06-30,2026-06-30,70884869.0,bin TL,Stoklar
+bim,2026_6,bilanco,stoklar,onceki,2025-12-31,2025-12-31,64114771.0,bin TL,Stoklar
+bim,2026_6,bilanco,duran_varliklar,guncel,2026-06-30,2026-06-30,276162543.0,bin TL,Duran Varlıklar
+bim,2026_6,bilanco,duran_varliklar,onceki,2025-12-31,2025-12-31,266840603.0,bin TL,Duran Varlıklar
+bim,2026_6,bilanco,toplam_varliklar,guncel,2026-06-30,2026-06-30,428574350.0,bin TL,Toplam Varlıklar
+bim,2026_6,bilanco,toplam_varliklar,onceki,2025-12-31,2025-12-31,398122648.0,bin TL,Toplam Varlıklar
+bim,2026_6,bilanco,kisa_vadeli_yukumlulukler,guncel,2026-06-30,2026-06-30,147697793.0,bin TL,Kısa Vadeli Yükümlülükler
+bim,2026_6,bilanco,kisa_vadeli_yukumlulukler,onceki,2025-12-31,2025-12-31,127596013.0,bin TL,Kısa Vadeli Yükümlülükler
+bim,2026_6,bilanco,kisa_vadeli_borclanmalar,guncel,2026-06-30,2026-06-30,15350001.0,bin TL,Kısa Vadeli Borçlanmalar
+bim,2026_6,bilanco,kisa_vadeli_borclanmalar,onceki,2025-12-31,2025-12-31,15359928.0,bin TL,Kısa Vadeli Borçlanmalar
+bim,2026_6,bilanco,banka_kredileri,guncel,2026-06-30,2026-06-30,739568.0,bin TL,Banka Kredileri
+bim,2026_6,bilanco,banka_kredileri,onceki,2025-12-31,2025-12-31,1025292.0,bin TL,Banka Kredileri
+bim,2026_6,bilanco,kiralama_borclari_kv,guncel,2026-06-30,2026-06-30,14610433.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2026_6,bilanco,kiralama_borclari_kv,onceki,2025-12-31,2025-12-31,14334636.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2026_6,bilanco,uzun_vadeli_yukumlulukler,guncel,2026-06-30,2026-06-30,77739194.0,bin TL,Uzun Vadeli Yükümlülükler
+bim,2026_6,bilanco,uzun_vadeli_yukumlulukler,onceki,2025-12-31,2025-12-31,73764041.0,bin TL,Uzun Vadeli Yükümlülükler
+bim,2026_6,bilanco,uzun_vadeli_borclanmalar,guncel,2026-06-30,2026-06-30,47242509.0,bin TL,Uzun Vadeli Borçlanmalar
+bim,2026_6,bilanco,uzun_vadeli_borclanmalar,onceki,2025-12-31,2025-12-31,46728128.0,bin TL,Uzun Vadeli Borçlanmalar
+bim,2026_6,bilanco,kiralama_borclari_uv,guncel,2026-06-30,2026-06-30,47242509.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2026_6,bilanco,kiralama_borclari_uv,onceki,2025-12-31,2025-12-31,46728128.0,bin TL,Kiralama İşlemlerinden Borçlar
+bim,2026_6,bilanco,ozkaynaklar,guncel,2026-06-30,2026-06-30,203137363.0,bin TL,Özkaynaklar
+bim,2026_6,bilanco,ozkaynaklar,onceki,2025-12-31,2025-12-31,196762594.0,bin TL,Özkaynaklar
+bim,2026_6,bilanco,ana_ortaklik_ozkaynaklari,guncel,2026-06-30,2026-06-30,201353398.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+bim,2026_6,bilanco,ana_ortaklik_ozkaynaklari,onceki,2025-12-31,2025-12-31,194984504.0,bin TL,Ana Ortaklığa Ait Özkaynaklar
+bim,2026_6,bilanco,toplam_kaynaklar,guncel,2026-06-30,2026-06-30,428574350.0,bin TL,Toplam Kaynaklar
+bim,2026_6,bilanco,toplam_kaynaklar,onceki,2025-12-31,2025-12-31,398122648.0,bin TL,Toplam Kaynaklar
+bim,2026_6,gelir,hasilat,guncel,2026-01-01,2026-06-30,449695235.0,bin TL,Hasılat
+bim,2026_6,gelir,hasilat,q_guncel,2026-04-01,2026-06-30,221902578.0,bin TL,Hasılat
+bim,2026_6,gelir,hasilat,onceki,2025-01-01,2025-06-30,409303226.0,bin TL,Hasılat
+bim,2026_6,gelir,hasilat,q_onceki,2025-04-01,2025-06-30,202425831.0,bin TL,Hasılat
+bim,2026_6,gelir,satislarin_maliyeti,guncel,2026-01-01,2026-06-30,-363885817.0,bin TL,Satışların Maliyeti (-)
+bim,2026_6,gelir,satislarin_maliyeti,q_guncel,2026-04-01,2026-06-30,-179228734.0,bin TL,Satışların Maliyeti (-)
+bim,2026_6,gelir,satislarin_maliyeti,onceki,2025-01-01,2025-06-30,-331499312.0,bin TL,Satışların Maliyeti (-)
+bim,2026_6,gelir,satislarin_maliyeti,q_onceki,2025-04-01,2025-06-30,-160835700.0,bin TL,Satışların Maliyeti (-)
+bim,2026_6,gelir,brut_kar,guncel,2026-01-01,2026-06-30,85809418.0,bin TL,BRÜT KAR
+bim,2026_6,gelir,brut_kar,q_guncel,2026-04-01,2026-06-30,42673844.0,bin TL,BRÜT KAR
+bim,2026_6,gelir,brut_kar,onceki,2025-01-01,2025-06-30,77803914.0,bin TL,BRÜT KAR
+bim,2026_6,gelir,brut_kar,q_onceki,2025-04-01,2025-06-30,41590131.0,bin TL,BRÜT KAR
+bim,2026_6,gelir,esas_faaliyet_diger_gelir,guncel,2026-01-01,2026-06-30,1236589.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+bim,2026_6,gelir,esas_faaliyet_diger_gelir,q_guncel,2026-04-01,2026-06-30,603482.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+bim,2026_6,gelir,esas_faaliyet_diger_gelir,onceki,2025-01-01,2025-06-30,1152072.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+bim,2026_6,gelir,esas_faaliyet_diger_gelir,q_onceki,2025-04-01,2025-06-30,677203.0,bin TL,Esas Faaliyetlerden Diğer Gelirler
+bim,2026_6,gelir,esas_faaliyet_diger_gider,guncel,2026-01-01,2026-06-30,-2509882.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+bim,2026_6,gelir,esas_faaliyet_diger_gider,q_guncel,2026-04-01,2026-06-30,-1572854.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+bim,2026_6,gelir,esas_faaliyet_diger_gider,onceki,2025-01-01,2025-06-30,-1558764.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+bim,2026_6,gelir,esas_faaliyet_diger_gider,q_onceki,2025-04-01,2025-06-30,-525525.0,bin TL,Esas Faaliyetlerden Diğer Giderler (-)
+bim,2026_6,gelir,esas_faaliyet_kari,guncel,2026-01-01,2026-06-30,8049522.0,bin TL,ESAS FAALİYET KARI
+bim,2026_6,gelir,esas_faaliyet_kari,q_guncel,2026-04-01,2026-06-30,5331565.0,bin TL,ESAS FAALİYET KARI
+bim,2026_6,gelir,esas_faaliyet_kari,onceki,2025-01-01,2025-06-30,3172822.0,bin TL,ESAS FAALİYET KARI
+bim,2026_6,gelir,esas_faaliyet_kari,q_onceki,2025-04-01,2025-06-30,4990134.0,bin TL,ESAS FAALİYET KARI
+bim,2026_6,gelir,finansman_gelirleri,guncel,2026-01-01,2026-06-30,132836.0,bin TL,Finansman Gelirleri
+bim,2026_6,gelir,finansman_gelirleri,q_guncel,2026-04-01,2026-06-30,86484.0,bin TL,Finansman Gelirleri
+bim,2026_6,gelir,finansman_gelirleri,onceki,2025-01-01,2025-06-30,63329.0,bin TL,Finansman Gelirleri
+bim,2026_6,gelir,finansman_gelirleri,q_onceki,2025-04-01,2025-06-30,31064.0,bin TL,Finansman Gelirleri
+bim,2026_6,gelir,finansman_giderleri,guncel,2026-01-01,2026-06-30,-5413450.0,bin TL,Finansman Giderleri (-)
+bim,2026_6,gelir,finansman_giderleri,q_guncel,2026-04-01,2026-06-30,-2732730.0,bin TL,Finansman Giderleri (-)
+bim,2026_6,gelir,finansman_giderleri,onceki,2025-01-01,2025-06-30,-4743800.0,bin TL,Finansman Giderleri (-)
+bim,2026_6,gelir,finansman_giderleri,q_onceki,2025-04-01,2025-06-30,-2403689.0,bin TL,Finansman Giderleri (-)
+bim,2026_6,gelir,parasal_kazanc_kayip,guncel,2026-01-01,2026-06-30,17639409.0,bin TL,Parasal Kazanç/(Kayıp)
+bim,2026_6,gelir,parasal_kazanc_kayip,q_guncel,2026-04-01,2026-06-30,6778211.0,bin TL,Parasal Kazanç/(Kayıp)
+bim,2026_6,gelir,parasal_kazanc_kayip,onceki,2025-01-01,2025-06-30,13327110.0,bin TL,Parasal Kazanç/(Kayıp)
+bim,2026_6,gelir,parasal_kazanc_kayip,q_onceki,2025-04-01,2025-06-30,1776747.0,bin TL,Parasal Kazanç/(Kayıp)
+bim,2026_6,gelir,vergi_oncesi_kar,guncel,2026-01-01,2026-06-30,25455810.0,bin TL,VERGİ ÖNCESİ KARI
+bim,2026_6,gelir,vergi_oncesi_kar,q_guncel,2026-04-01,2026-06-30,12470430.0,bin TL,VERGİ ÖNCESİ KARI
+bim,2026_6,gelir,vergi_oncesi_kar,onceki,2025-01-01,2025-06-30,15230746.0,bin TL,VERGİ ÖNCESİ KARI
+bim,2026_6,gelir,vergi_oncesi_kar,q_onceki,2025-04-01,2025-06-30,6272956.0,bin TL,VERGİ ÖNCESİ KARI
+bim,2026_6,gelir,donem_kari,guncel,2026-01-01,2026-06-30,15094815.0,bin TL,DÖNEM KARI
+bim,2026_6,gelir,donem_kari,q_guncel,2026-04-01,2026-06-30,8084143.0,bin TL,DÖNEM KARI
+bim,2026_6,gelir,donem_kari,onceki,2025-01-01,2025-06-30,7335863.0,bin TL,DÖNEM KARI
+bim,2026_6,gelir,donem_kari,q_onceki,2025-04-01,2025-06-30,3540091.0,bin TL,DÖNEM KARI
+bim,2026_6,gelir,ana_ortaklik_payi,guncel,2026-01-01,2026-06-30,14934476.0,bin TL,Ana Ortaklık Payları
+bim,2026_6,gelir,ana_ortaklik_payi,q_guncel,2026-04-01,2026-06-30,8020311.0,bin TL,Ana Ortaklık Payları
+bim,2026_6,gelir,ana_ortaklik_payi,onceki,2025-01-01,2025-06-30,7346117.0,bin TL,Ana Ortaklık Payları
+bim,2026_6,gelir,ana_ortaklik_payi,q_onceki,2025-04-01,2025-06-30,3557762.0,bin TL,Ana Ortaklık Payları
+bim,2026_6,gelir,kgop_payi,guncel,2026-01-01,2026-06-30,160339.0,bin TL,Kontrol Gücü Olmayan Paylar
+bim,2026_6,gelir,kgop_payi,q_guncel,2026-04-01,2026-06-30,63832.0,bin TL,Kontrol Gücü Olmayan Paylar
+bim,2026_6,gelir,kgop_payi,onceki,2025-01-01,2025-06-30,-10254.0,bin TL,Kontrol Gücü Olmayan Paylar
+bim,2026_6,gelir,kgop_payi,q_onceki,2025-04-01,2025-06-30,-17671.0,bin TL,Kontrol Gücü Olmayan Paylar
+bim,2026_6,nakit,isletme_nakit_akisi,guncel,2026-01-01,2026-06-30,37907288.0,bin TL,A. İŞLETME FAALİYETLERİNDEN ELDE EDİLEN NAKİT AKIŞLARI
+bim,2026_6,nakit,isletme_nakit_akisi,onceki,2025-01-01,2025-06-30,29454043.0,bin TL,A. İŞLETME FAALİYETLERİNDEN ELDE EDİLEN NAKİT AKIŞLARI
+bim,2026_6,nakit,yatirim_nakit_akisi,guncel,2026-01-01,2026-06-30,-26508492.0,bin TL,B. YATIRIM FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2026_6,nakit,yatirim_nakit_akisi,onceki,2025-01-01,2025-06-30,-18846223.0,bin TL,B. YATIRIM FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2026_6,nakit,finansman_nakit_akisi,guncel,2026-01-01,2026-06-30,-10405787.0,bin TL,C. FİNANSMAN FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+bim,2026_6,nakit,finansman_nakit_akisi,onceki,2025-01-01,2025-06-30,-9997999.0,bin TL,C. FİNANSMAN FAALİYETLERİNDE KULLANILAN NAKİT AKIŞLARI
+tupras,2024_12,bilanco,donen_varliklar,guncel,2024-12-31,2024-12-31,185591048.0,bin TL,Dönen varlıklar
+tupras,2024_12,bilanco,donen_varliklar,onceki,2023-12-31,2023-12-31,290417521.0,bin TL,Dönen varlıklar
+tupras,2024_12,bilanco,nakit_ve_benzerleri,guncel,2024-12-31,2024-12-31,73534436.0,bin TL,Nakit ve nakit benzerleri
+tupras,2024_12,bilanco,nakit_ve_benzerleri,onceki,2023-12-31,2023-12-31,140512161.0,bin TL,Nakit ve nakit benzerleri
+tupras,2024_12,bilanco,ticari_alacaklar,guncel,2024-12-31,2024-12-31,37071661.0,bin TL,Ticari alacaklar
+tupras,2024_12,bilanco,ticari_alacaklar,onceki,2023-12-31,2023-12-31,58386047.0,bin TL,Ticari alacaklar
+tupras,2024_12,bilanco,stoklar,guncel,2024-12-31,2024-12-31,60277662.0,bin TL,Stoklar
+tupras,2024_12,bilanco,stoklar,onceki,2023-12-31,2023-12-31,64196689.0,bin TL,Stoklar
+tupras,2024_12,bilanco,duran_varliklar,guncel,2024-12-31,2024-12-31,268536479.0,bin TL,Duran varlıklar
+tupras,2024_12,bilanco,duran_varliklar,onceki,2023-12-31,2023-12-31,239155513.0,bin TL,Duran varlıklar
+tupras,2024_12,bilanco,toplam_varliklar,guncel,2024-12-31,2024-12-31,454127527.0,bin TL,Toplam varlıklar
+tupras,2024_12,bilanco,toplam_varliklar,onceki,2023-12-31,2023-12-31,529573034.0,bin TL,Toplam varlıklar
+tupras,2024_12,bilanco,kisa_vadeli_yukumlulukler,guncel,2024-12-31,2024-12-31,148768451.0,bin TL,Kısa vadeli yükümlülükler
+tupras,2024_12,bilanco,kisa_vadeli_yukumlulukler,onceki,2023-12-31,2023-12-31,224178678.0,bin TL,Kısa vadeli yükümlülükler
+tupras,2024_12,bilanco,kisa_vadeli_borclanmalar,guncel,2024-12-31,2024-12-31,3769795.0,bin TL,Kısa vadeli borçlanmalar
+tupras,2024_12,bilanco,kisa_vadeli_borclanmalar,onceki,2023-12-31,2023-12-31,3403881.0,bin TL,Kısa vadeli borçlanmalar
+tupras,2024_12,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,guncel,2024-12-31,2024-12-31,5284142.0,bin TL,Uzun vadeli borçlanmaların kısa vadeli kısımları
+tupras,2024_12,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,onceki,2023-12-31,2023-12-31,39863670.0,bin TL,Uzun vadeli borçlanmaların kısa vadeli kısımları
+tupras,2024_12,bilanco,uzun_vadeli_yukumlulukler,guncel,2024-12-31,2024-12-31,19111355.0,bin TL,Uzun vadeli yükümlülükler
+tupras,2024_12,bilanco,uzun_vadeli_yukumlulukler,onceki,2023-12-31,2023-12-31,12390507.0,bin TL,Uzun vadeli yükümlülükler
+tupras,2024_12,bilanco,uzun_vadeli_borclanmalar,guncel,2024-12-31,2024-12-31,9934698.0,bin TL,Uzun vadeli borçlanmalar
+tupras,2024_12,bilanco,uzun_vadeli_borclanmalar,onceki,2023-12-31,2023-12-31,7735944.0,bin TL,Uzun vadeli borçlanmalar
+tupras,2024_12,bilanco,ozkaynaklar,guncel,2024-12-31,2024-12-31,286247721.0,bin TL,Özkaynaklar
+tupras,2024_12,bilanco,ozkaynaklar,onceki,2023-12-31,2023-12-31,293003849.0,bin TL,Özkaynaklar
+tupras,2024_12,bilanco,ana_ortaklik_ozkaynaklari,guncel,2024-12-31,2024-12-31,282215289.0,bin TL,Ana ortaklığa ait özkaynaklar
+tupras,2024_12,bilanco,ana_ortaklik_ozkaynaklari,onceki,2023-12-31,2023-12-31,289859976.0,bin TL,Ana ortaklığa ait özkaynaklar
+tupras,2024_12,bilanco,toplam_kaynaklar,guncel,2024-12-31,2024-12-31,454127527.0,bin TL,Toplam kaynaklar
+tupras,2024_12,bilanco,toplam_kaynaklar,onceki,2023-12-31,2023-12-31,529573034.0,bin TL,Toplam kaynaklar
+tupras,2024_12,gelir,hasilat,guncel,2024-01-01,2024-12-31,810385588.0,bin TL,Hasılat
+tupras,2024_12,gelir,hasilat,onceki,2023-01-01,2023-12-31,991202993.0,bin TL,Hasılat
+tupras,2024_12,gelir,satislarin_maliyeti,guncel,2024-01-01,2024-12-31,-742355284.0,bin TL,Satışların maliyeti
+tupras,2024_12,gelir,satislarin_maliyeti,onceki,2023-01-01,2023-12-31,-832772469.0,bin TL,Satışların maliyeti
+tupras,2024_12,gelir,brut_kar,guncel,2024-01-01,2024-12-31,68030304.0,bin TL,Brüt kar (zarar)
+tupras,2024_12,gelir,brut_kar,onceki,2023-01-01,2023-12-31,158430524.0,bin TL,Brüt kar (zarar)
+tupras,2024_12,gelir,esas_faaliyet_diger_gelir,guncel,2024-01-01,2024-12-31,14302734.0,bin TL,Esas faaliyetlerden diğer gelirler
+tupras,2024_12,gelir,esas_faaliyet_diger_gelir,onceki,2023-01-01,2023-12-31,18429773.0,bin TL,Esas faaliyetlerden diğer gelirler
+tupras,2024_12,gelir,esas_faaliyet_diger_gider,guncel,2024-01-01,2024-12-31,-19680704.0,bin TL,Esas faaliyetlerden diğer giderler
+tupras,2024_12,gelir,esas_faaliyet_diger_gider,onceki,2023-01-01,2023-12-31,-42322675.0,bin TL,Esas faaliyetlerden diğer giderler
+tupras,2024_12,gelir,esas_faaliyet_kari,guncel,2024-01-01,2024-12-31,35709966.0,bin TL,Esas faaliyet karı (zararı)
+tupras,2024_12,gelir,esas_faaliyet_kari,onceki,2023-01-01,2023-12-31,106303044.0,bin TL,Esas faaliyet karı (zararı)
+tupras,2024_12,gelir,finansman_gelirleri,guncel,2024-01-01,2024-12-31,29725764.0,bin TL,Finansman gelirleri
+tupras,2024_12,gelir,finansman_gelirleri,onceki,2023-01-01,2023-12-31,28600305.0,bin TL,Finansman gelirleri
+tupras,2024_12,gelir,finansman_giderleri,guncel,2024-01-01,2024-12-31,-20533937.0,bin TL,Finansman giderleri
+tupras,2024_12,gelir,finansman_giderleri,onceki,2023-01-01,2023-12-31,-36099050.0,bin TL,Finansman giderleri
+tupras,2024_12,gelir,parasal_kazanc_kayip,guncel,2024-01-01,2024-12-31,-14582760.0,bin TL,Parasal kayıp/kazanç
+tupras,2024_12,gelir,parasal_kazanc_kayip,onceki,2023-01-01,2023-12-31,-16960683.0,bin TL,Parasal kayıp/kazanç
+tupras,2024_12,gelir,vergi_oncesi_kar,guncel,2024-01-01,2024-12-31,31745504.0,bin TL,Sürdürülen faaliyetler vergi öncesi karı (zararı)
+tupras,2024_12,gelir,vergi_oncesi_kar,onceki,2023-01-01,2023-12-31,83480454.0,bin TL,Sürdürülen faaliyetler vergi öncesi karı (zararı)
+tupras,2024_12,gelir,donem_kari,guncel,2024-01-01,2024-12-31,19033640.0,bin TL,Sürdürülen faaliyetler dönem karı (zararı)
+tupras,2024_12,gelir,donem_kari,onceki,2023-01-01,2023-12-31,77780087.0,bin TL,Sürdürülen faaliyetler dönem karı (zararı)
+tupras,2024_12,gelir,kgop_payi,guncel,2024-01-01,2024-12-31,718483.0,bin TL,Kontrol gücü olmayan paylar
+tupras,2024_12,gelir,kgop_payi,onceki,2023-01-01,2023-12-31,425666.0,bin TL,Kontrol gücü olmayan paylar
+tupras,2024_12,gelir,ana_ortaklik_payi,guncel,2024-01-01,2024-12-31,18315157.0,bin TL,Ana ortaklık payları
+tupras,2024_12,gelir,ana_ortaklik_payi,onceki,2023-01-01,2023-12-31,77354421.0,bin TL,Ana ortaklık payları
+tupras,2024_12,nakit,isletme_nakit_akisi,guncel,2024-01-01,2024-12-31,35271031.0,bin TL,İşletme faaliyetlerinden nakit akışları
+tupras,2024_12,nakit,isletme_nakit_akisi,onceki,2023-01-01,2023-12-31,123121104.0,bin TL,İşletme faaliyetlerinden nakit akışları
+tupras,2024_12,nakit,yatirim_nakit_akisi,guncel,2024-01-01,2024-12-31,-11890453.0,bin TL,Yatırım faaliyetlerinden kaynaklanan nakit akışları
+tupras,2024_12,nakit,yatirim_nakit_akisi,onceki,2023-01-01,2023-12-31,-13787255.0,bin TL,Yatırım faaliyetlerinden kaynaklanan nakit akışları
+tupras,2024_12,nakit,finansman_nakit_akisi,guncel,2024-01-01,2024-12-31,-57735630.0,bin TL,Finansman faaliyetlerinden nakit akışları
+tupras,2024_12,nakit,finansman_nakit_akisi,onceki,2023-01-01,2023-12-31,-50207381.0,bin TL,Finansman faaliyetlerinden nakit akışları
+tupras,2025_12,bilanco,nakit_ve_benzerleri,guncel,2025-12-31,2025-12-31,107237211.0,bin TL,Nakit ve nakit benzerleri
+tupras,2025_12,bilanco,nakit_ve_benzerleri,onceki,2024-12-31,2024-12-31,96250694.0,bin TL,Nakit ve nakit benzerleri
+tupras,2025_12,bilanco,ticari_alacaklar,guncel,2025-12-31,2025-12-31,52752668.0,bin TL,Ticari alacaklar
+tupras,2025_12,bilanco,ticari_alacaklar,onceki,2024-12-31,2024-12-31,48523839.0,bin TL,Ticari alacaklar
+tupras,2025_12,bilanco,stoklar,guncel,2025-12-31,2025-12-31,62145470.0,bin TL,Stoklar
+tupras,2025_12,bilanco,stoklar,onceki,2024-12-31,2024-12-31,78898637.0,bin TL,Stoklar
+tupras,2025_12,bilanco,donen_varliklar,guncel,2025-12-31,2025-12-31,236931136.0,bin TL,Dönen varlıklar
+tupras,2025_12,bilanco,donen_varliklar,onceki,2024-12-31,2024-12-31,242923855.0,bin TL,Dönen varlıklar
+tupras,2025_12,bilanco,duran_varliklar,guncel,2025-12-31,2025-12-31,355042707.0,bin TL,Duran varlıklar
+tupras,2025_12,bilanco,duran_varliklar,onceki,2024-12-31,2024-12-31,351492746.0,bin TL,Duran varlıklar
+tupras,2025_12,bilanco,toplam_varliklar,guncel,2025-12-31,2025-12-31,591973843.0,bin TL,Toplam varlıklar
+tupras,2025_12,bilanco,toplam_varliklar,onceki,2024-12-31,2024-12-31,594416601.0,bin TL,Toplam varlıklar
+tupras,2025_12,bilanco,kisa_vadeli_borclanmalar,guncel,2025-12-31,2025-12-31,8957100.0,bin TL,Kısa vadeli borçlanmalar
+tupras,2025_12,bilanco,kisa_vadeli_borclanmalar,onceki,2024-12-31,2024-12-31,4934360.0,bin TL,Kısa vadeli borçlanmalar
+tupras,2025_12,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,guncel,2025-12-31,2025-12-31,12863610.0,bin TL,Uzun vadeli borçlanmaların kısa vadeli kısımları
+tupras,2025_12,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,onceki,2024-12-31,2024-12-31,6916519.0,bin TL,Uzun vadeli borçlanmaların kısa vadeli kısımları
+tupras,2025_12,bilanco,kisa_vadeli_yukumlulukler,guncel,2025-12-31,2025-12-31,169748201.0,bin TL,Kısa vadeli yükümlülükler
+tupras,2025_12,bilanco,kisa_vadeli_yukumlulukler,onceki,2024-12-31,2024-12-31,194726000.0,bin TL,Kısa vadeli yükümlülükler
+tupras,2025_12,bilanco,uzun_vadeli_borclanmalar,guncel,2025-12-31,2025-12-31,28428775.0,bin TL,Uzun vadeli borçlanmalar
+tupras,2025_12,bilanco,uzun_vadeli_borclanmalar,onceki,2024-12-31,2024-12-31,13003725.0,bin TL,Uzun vadeli borçlanmalar
+tupras,2025_12,bilanco,uzun_vadeli_yukumlulukler,guncel,2025-12-31,2025-12-31,52397648.0,bin TL,Uzun vadeli yükümlülükler
+tupras,2025_12,bilanco,uzun_vadeli_yukumlulukler,onceki,2024-12-31,2024-12-31,25015236.0,bin TL,Uzun vadeli yükümlülükler
+tupras,2025_12,bilanco,ozkaynaklar,guncel,2025-12-31,2025-12-31,369827994.0,bin TL,Özkaynaklar
+tupras,2025_12,bilanco,ozkaynaklar,onceki,2024-12-31,2024-12-31,374675365.0,bin TL,Özkaynaklar
+tupras,2025_12,bilanco,ana_ortaklik_ozkaynaklari,guncel,2025-12-31,2025-12-31,364099258.0,bin TL,Ana ortaklığa ait özkaynaklar
+tupras,2025_12,bilanco,ana_ortaklik_ozkaynaklari,onceki,2024-12-31,2024-12-31,369397234.0,bin TL,Ana ortaklığa ait özkaynaklar
+tupras,2025_12,bilanco,toplam_kaynaklar,guncel,2025-12-31,2025-12-31,591973843.0,bin TL,Toplam kaynaklar
+tupras,2025_12,bilanco,toplam_kaynaklar,onceki,2024-12-31,2024-12-31,594416601.0,bin TL,Toplam kaynaklar
+tupras,2025_12,gelir,hasilat,guncel,2025-01-01,2025-12-31,830356131.0,bin TL,Hasılat
+tupras,2025_12,gelir,hasilat,onceki,2024-01-01,2024-12-31,1060729904.0,bin TL,Hasılat
+tupras,2025_12,gelir,satislarin_maliyeti,guncel,2025-01-01,2025-12-31,-749123853.0,bin TL,Satışların maliyeti
+tupras,2025_12,gelir,satislarin_maliyeti,onceki,2024-01-01,2024-12-31,-971683678.0,bin TL,Satışların maliyeti
+tupras,2025_12,gelir,brut_kar,guncel,2025-01-01,2025-12-31,81232278.0,bin TL,Brüt kar (zarar)
+tupras,2025_12,gelir,brut_kar,onceki,2024-01-01,2024-12-31,89046226.0,bin TL,Brüt kar (zarar)
+tupras,2025_12,gelir,esas_faaliyet_diger_gelir,guncel,2025-01-01,2025-12-31,14075077.0,bin TL,Esas faaliyetlerden diğer gelirler
+tupras,2025_12,gelir,esas_faaliyet_diger_gelir,onceki,2024-01-01,2024-12-31,18721135.0,bin TL,Esas faaliyetlerden diğer gelirler
+tupras,2025_12,gelir,esas_faaliyet_diger_gider,guncel,2025-01-01,2025-12-31,-19875003.0,bin TL,Esas faaliyetlerden diğer giderler
+tupras,2025_12,gelir,esas_faaliyet_diger_gider,onceki,2024-01-01,2024-12-31,-25760467.0,bin TL,Esas faaliyetlerden diğer giderler
+tupras,2025_12,gelir,esas_faaliyet_kari,guncel,2025-01-01,2025-12-31,41646897.0,bin TL,Esas faaliyet karı (zararı)
+tupras,2025_12,gelir,esas_faaliyet_kari,onceki,2024-01-01,2024-12-31,46741489.0,bin TL,Esas faaliyet karı (zararı)
+tupras,2025_12,gelir,finansman_gelirleri,guncel,2025-01-01,2025-12-31,25453272.0,bin TL,Finansman gelirleri
+tupras,2025_12,gelir,finansman_gelirleri,onceki,2024-01-01,2024-12-31,38908647.0,bin TL,Finansman gelirleri
+tupras,2025_12,gelir,finansman_giderleri,guncel,2025-01-01,2025-12-31,-21143896.0,bin TL,Finansman giderleri
+tupras,2025_12,gelir,finansman_giderleri,onceki,2024-01-01,2024-12-31,-26877281.0,bin TL,Finansman giderleri
+tupras,2025_12,gelir,parasal_kazanc_kayip,guncel,2025-01-01,2025-12-31,-3476147.0,bin TL,Net parasal pozisyon kazançları/(kayıpları)
+tupras,2025_12,gelir,parasal_kazanc_kayip,onceki,2024-01-01,2024-12-31,-19087666.0,bin TL,Net parasal pozisyon kazançları/(kayıpları)
+tupras,2025_12,gelir,vergi_oncesi_kar,guncel,2025-01-01,2025-12-31,43768722.0,bin TL,Sürdürülen faaliyetler vergi öncesi karı (zararı)
+tupras,2025_12,gelir,vergi_oncesi_kar,onceki,2024-01-01,2024-12-31,41552326.0,bin TL,Sürdürülen faaliyetler vergi öncesi karı (zararı)
+tupras,2025_12,gelir,donem_kari,guncel,2025-01-01,2025-12-31,29872672.0,bin TL,Sürdürülen faaliyetler dönem karı (zararı)
+tupras,2025_12,gelir,donem_kari,onceki,2024-01-01,2024-12-31,24913512.0,bin TL,Sürdürülen faaliyetler dönem karı (zararı)
+tupras,2025_12,gelir,kgop_payi,guncel,2025-01-01,2025-12-31,349489.0,bin TL,Kontrol gücü olmayan paylar
+tupras,2025_12,gelir,kgop_payi,onceki,2024-01-01,2024-12-31,940437.0,bin TL,Kontrol gücü olmayan paylar
+tupras,2025_12,gelir,ana_ortaklik_payi,guncel,2025-01-01,2025-12-31,29523183.0,bin TL,Ana ortaklık payları
+tupras,2025_12,gelir,ana_ortaklik_payi,onceki,2024-01-01,2024-12-31,23973075.0,bin TL,Ana ortaklık payları
+tupras,2025_12,nakit,isletme_nakit_akisi,guncel,2025-01-01,2025-12-31,49464734.0,bin TL,İşletme faaliyetlerinden nakit akışları
+tupras,2025_12,nakit,isletme_nakit_akisi,onceki,2024-01-01,2024-12-31,46166957.0,bin TL,İşletme faaliyetlerinden nakit akışları
+tupras,2025_12,nakit,yatirim_nakit_akisi,guncel,2025-01-01,2025-12-31,-19416379.0,bin TL,Yatırım faaliyetlerinden kaynaklanan nakit akışları
+tupras,2025_12,nakit,yatirim_nakit_akisi,onceki,2024-01-01,2024-12-31,-15563652.0,bin TL,Yatırım faaliyetlerinden kaynaklanan nakit akışları
+tupras,2025_12,nakit,finansman_nakit_akisi,guncel,2025-01-01,2025-12-31,144024.0,bin TL,Finansman faaliyetlerinden nakit akışları
+tupras,2025_12,nakit,finansman_nakit_akisi,onceki,2024-01-01,2024-12-31,-75571321.0,bin TL,Finansman faaliyetlerinden nakit akışları
+tupras,2026_6,bilanco,nakit_ve_benzerleri,guncel,2026-06-30,2026-06-30,195840940.0,bin TL,Nakit ve nakit benzerleri
+tupras,2026_6,bilanco,nakit_ve_benzerleri,onceki,2025-12-31,2025-12-31,126280395.0,bin TL,Nakit ve nakit benzerleri
+tupras,2026_6,bilanco,ticari_alacaklar,guncel,2026-06-30,2026-06-30,78747644.0,bin TL,Ticari alacaklar
+tupras,2026_6,bilanco,ticari_alacaklar,onceki,2025-12-31,2025-12-31,62120487.0,bin TL,Ticari alacaklar
+tupras,2026_6,bilanco,stoklar,guncel,2026-06-30,2026-06-30,97044745.0,bin TL,Stoklar
+tupras,2026_6,bilanco,stoklar,onceki,2025-12-31,2025-12-31,73181263.0,bin TL,Stoklar
+tupras,2026_6,bilanco,donen_varliklar,guncel,2026-06-30,2026-06-30,439480874.0,bin TL,Dönen varlıklar
+tupras,2026_6,bilanco,donen_varliklar,onceki,2025-12-31,2025-12-31,279005365.0,bin TL,Dönen varlıklar
+tupras,2026_6,bilanco,duran_varliklar,guncel,2026-06-30,2026-06-30,420506642.0,bin TL,Duran varlıklar
+tupras,2026_6,bilanco,duran_varliklar,onceki,2025-12-31,2025-12-31,418091190.0,bin TL,Duran varlıklar
+tupras,2026_6,bilanco,toplam_varliklar,guncel,2026-06-30,2026-06-30,859987516.0,bin TL,Toplam varlıklar
+tupras,2026_6,bilanco,toplam_varliklar,onceki,2025-12-31,2025-12-31,697096555.0,bin TL,Toplam varlıklar
+tupras,2026_6,bilanco,kisa_vadeli_borclanmalar,guncel,2026-06-30,2026-06-30,17579248.0,bin TL,Kısa vadeli borçlanmalar
+tupras,2026_6,bilanco,kisa_vadeli_borclanmalar,onceki,2025-12-31,2025-12-31,10547702.0,bin TL,Kısa vadeli borçlanmalar
+tupras,2026_6,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,guncel,2026-06-30,2026-06-30,14178331.0,bin TL,Uzun vadeli borçlanmaların kısa vadeli kısımları
+tupras,2026_6,bilanco,uzun_vadeli_borclanmalarin_kisa_kismi,onceki,2025-12-31,2025-12-31,15147930.0,bin TL,Uzun vadeli borçlanmaların kısa vadeli kısımları
+tupras,2026_6,bilanco,kisa_vadeli_yukumlulukler,guncel,2026-06-30,2026-06-30,325369321.0,bin TL,Kısa vadeli yükümlülükler
+tupras,2026_6,bilanco,kisa_vadeli_yukumlulukler,onceki,2025-12-31,2025-12-31,199892086.0,bin TL,Kısa vadeli yükümlülükler
+tupras,2026_6,bilanco,uzun_vadeli_borclanmalar,guncel,2026-06-30,2026-06-30,36443100.0,bin TL,Uzun vadeli borçlanmalar
+tupras,2026_6,bilanco,uzun_vadeli_borclanmalar,onceki,2025-12-31,2025-12-31,33477157.0,bin TL,Uzun vadeli borçlanmalar
+tupras,2026_6,bilanco,uzun_vadeli_yukumlulukler,guncel,2026-06-30,2026-06-30,71311414.0,bin TL,Uzun vadeli yükümlülükler
+tupras,2026_6,bilanco,uzun_vadeli_yukumlulukler,onceki,2025-12-31,2025-12-31,61702421.0,bin TL,Uzun vadeli yükümlülükler
+tupras,2026_6,bilanco,ozkaynaklar,guncel,2026-06-30,2026-06-30,463306781.0,bin TL,Özkaynaklar
+tupras,2026_6,bilanco,ozkaynaklar,onceki,2025-12-31,2025-12-31,435502048.0,bin TL,Özkaynaklar
+tupras,2026_6,bilanco,ana_ortaklik_ozkaynaklari,guncel,2026-06-30,2026-06-30,456139125.0,bin TL,Ana ortaklığa ait özkaynaklar
+tupras,2026_6,bilanco,ana_ortaklik_ozkaynaklari,onceki,2025-12-31,2025-12-31,428756003.0,bin TL,Ana ortaklığa ait özkaynaklar
+tupras,2026_6,bilanco,toplam_kaynaklar,guncel,2026-06-30,2026-06-30,859987516.0,bin TL,Toplam kaynaklar
+tupras,2026_6,bilanco,toplam_kaynaklar,onceki,2025-12-31,2025-12-31,697096555.0,bin TL,Toplam kaynaklar
+tupras,2026_6,gelir,hasilat,guncel,2026-01-01,2026-06-30,662788010.0,bin TL,Hasılat
+tupras,2026_6,gelir,hasilat,q_guncel,2026-04-01,2026-06-30,386420235.0,bin TL,Hasılat
+tupras,2026_6,gelir,hasilat,onceki,2025-01-01,2025-06-30,464119398.0,bin TL,Hasılat
+tupras,2026_6,gelir,hasilat,q_onceki,2025-04-01,2025-06-30,241975612.0,bin TL,Hasılat
+tupras,2026_6,gelir,satislarin_maliyeti,guncel,2026-01-01,2026-06-30,-578662326.0,bin TL,Satışların maliyeti
+tupras,2026_6,gelir,satislarin_maliyeti,q_guncel,2026-04-01,2026-06-30,-325383285.0,bin TL,Satışların maliyeti
+tupras,2026_6,gelir,satislarin_maliyeti,onceki,2025-01-01,2025-06-30,-422131404.0,bin TL,Satışların maliyeti
+tupras,2026_6,gelir,satislarin_maliyeti,q_onceki,2025-04-01,2025-06-30,-218424528.0,bin TL,Satışların maliyeti
+tupras,2026_6,gelir,brut_kar,guncel,2026-01-01,2026-06-30,84125684.0,bin TL,Brüt kar (zarar)
+tupras,2026_6,gelir,brut_kar,q_guncel,2026-04-01,2026-06-30,61036950.0,bin TL,Brüt kar (zarar)
+tupras,2026_6,gelir,brut_kar,onceki,2025-01-01,2025-06-30,41987994.0,bin TL,Brüt kar (zarar)
+tupras,2026_6,gelir,brut_kar,q_onceki,2025-04-01,2025-06-30,23551084.0,bin TL,Brüt kar (zarar)
+tupras,2026_6,gelir,esas_faaliyet_diger_gelir,guncel,2026-01-01,2026-06-30,10412127.0,bin TL,Esas faaliyetlerden diğer gelirler
+tupras,2026_6,gelir,esas_faaliyet_diger_gelir,q_guncel,2026-04-01,2026-06-30,6047002.0,bin TL,Esas faaliyetlerden diğer gelirler
+tupras,2026_6,gelir,esas_faaliyet_diger_gelir,onceki,2025-01-01,2025-06-30,8708883.0,bin TL,Esas faaliyetlerden diğer gelirler
+tupras,2026_6,gelir,esas_faaliyet_diger_gelir,q_onceki,2025-04-01,2025-06-30,5362069.0,bin TL,Esas faaliyetlerden diğer gelirler
+tupras,2026_6,gelir,esas_faaliyet_diger_gider,guncel,2026-01-01,2026-06-30,-13760810.0,bin TL,Esas faaliyetlerden diğer giderler
+tupras,2026_6,gelir,esas_faaliyet_diger_gider,q_guncel,2026-04-01,2026-06-30,-9113476.0,bin TL,Esas faaliyetlerden diğer giderler
+tupras,2026_6,gelir,esas_faaliyet_diger_gider,onceki,2025-01-01,2025-06-30,-13998945.0,bin TL,Esas faaliyetlerden diğer giderler
+tupras,2026_6,gelir,esas_faaliyet_diger_gider,q_onceki,2025-04-01,2025-06-30,-6650565.0,bin TL,Esas faaliyetlerden diğer giderler
+tupras,2026_6,gelir,esas_faaliyet_kari,guncel,2026-01-01,2026-06-30,59025244.0,bin TL,Esas faaliyet karı (zararı)
+tupras,2026_6,gelir,esas_faaliyet_kari,q_guncel,2026-04-01,2026-06-30,46833690.0,bin TL,Esas faaliyet karı (zararı)
+tupras,2026_6,gelir,esas_faaliyet_kari,onceki,2025-01-01,2025-06-30,18160918.0,bin TL,Esas faaliyet karı (zararı)
+tupras,2026_6,gelir,esas_faaliyet_kari,q_onceki,2025-04-01,2025-06-30,12711834.0,bin TL,Esas faaliyet karı (zararı)
+tupras,2026_6,gelir,finansman_gelirleri,guncel,2026-01-01,2026-06-30,19543564.0,bin TL,Finansman gelirleri
+tupras,2026_6,gelir,finansman_gelirleri,q_guncel,2026-04-01,2026-06-30,11667507.0,bin TL,Finansman gelirleri
+tupras,2026_6,gelir,finansman_gelirleri,onceki,2025-01-01,2025-06-30,13302009.0,bin TL,Finansman gelirleri
+tupras,2026_6,gelir,finansman_gelirleri,q_onceki,2025-04-01,2025-06-30,7440696.0,bin TL,Finansman gelirleri
+tupras,2026_6,gelir,finansman_giderleri,guncel,2026-01-01,2026-06-30,-14753578.0,bin TL,Finansman giderleri
+tupras,2026_6,gelir,finansman_giderleri,q_guncel,2026-04-01,2026-06-30,-8520773.0,bin TL,Finansman giderleri
+tupras,2026_6,gelir,finansman_giderleri,onceki,2025-01-01,2025-06-30,-11579478.0,bin TL,Finansman giderleri
+tupras,2026_6,gelir,finansman_giderleri,q_onceki,2025-04-01,2025-06-30,-6749463.0,bin TL,Finansman giderleri
+tupras,2026_6,gelir,parasal_kazanc_kayip,guncel,2026-01-01,2026-06-30,-3446844.0,bin TL,Net parasal pozisyon kazançları/(kayıpları)
+tupras,2026_6,gelir,parasal_kazanc_kayip,q_guncel,2026-04-01,2026-06-30,-812395.0,bin TL,Net parasal pozisyon kazançları/(kayıpları)
+tupras,2026_6,gelir,parasal_kazanc_kayip,onceki,2025-01-01,2025-06-30,-2571177.0,bin TL,Net parasal pozisyon kazançları/(kayıpları)
+tupras,2026_6,gelir,parasal_kazanc_kayip,q_onceki,2025-04-01,2025-06-30,292323.0,bin TL,Net parasal pozisyon kazançları/(kayıpları)
+tupras,2026_6,gelir,vergi_oncesi_kar,guncel,2026-01-01,2026-06-30,61029781.0,bin TL,Sürdürülen faaliyetler vergi öncesi karı (zararı)
+tupras,2026_6,gelir,vergi_oncesi_kar,q_guncel,2026-04-01,2026-06-30,49918680.0,bin TL,Sürdürülen faaliyetler vergi öncesi karı (zararı)
+tupras,2026_6,gelir,vergi_oncesi_kar,onceki,2025-01-01,2025-06-30,18104917.0,bin TL,Sürdürülen faaliyetler vergi öncesi karı (zararı)
+tupras,2026_6,gelir,vergi_oncesi_kar,q_onceki,2025-04-01,2025-06-30,14557031.0,bin TL,Sürdürülen faaliyetler vergi öncesi karı (zararı)
+tupras,2026_6,gelir,donem_kari,guncel,2026-01-01,2026-06-30,50272473.0,bin TL,Sürdürülen faaliyetler dönem karı (zararı)
+tupras,2026_6,gelir,donem_kari,q_guncel,2026-04-01,2026-06-30,46189781.0,bin TL,Sürdürülen faaliyetler dönem karı (zararı)
+tupras,2026_6,gelir,donem_kari,onceki,2025-01-01,2025-06-30,11981560.0,bin TL,Sürdürülen faaliyetler dönem karı (zararı)
+tupras,2026_6,gelir,donem_kari,q_onceki,2025-04-01,2025-06-30,11813325.0,bin TL,Sürdürülen faaliyetler dönem karı (zararı)
+tupras,2026_6,gelir,kgop_payi,guncel,2026-01-01,2026-06-30,424789.0,bin TL,Kontrol gücü olmayan paylar
+tupras,2026_6,gelir,kgop_payi,q_guncel,2026-04-01,2026-06-30,312060.0,bin TL,Kontrol gücü olmayan paylar
+tupras,2026_6,gelir,kgop_payi,onceki,2025-01-01,2025-06-30,109323.0,bin TL,Kontrol gücü olmayan paylar
+tupras,2026_6,gelir,kgop_payi,q_onceki,2025-04-01,2025-06-30,77042.0,bin TL,Kontrol gücü olmayan paylar
+tupras,2026_6,gelir,ana_ortaklik_payi,guncel,2026-01-01,2026-06-30,49847684.0,bin TL,Ana ortaklık payları
+tupras,2026_6,gelir,ana_ortaklik_payi,q_guncel,2026-04-01,2026-06-30,45877721.0,bin TL,Ana ortaklık payları
+tupras,2026_6,gelir,ana_ortaklik_payi,onceki,2025-01-01,2025-06-30,11872237.0,bin TL,Ana ortaklık payları
+tupras,2026_6,gelir,ana_ortaklik_payi,q_onceki,2025-04-01,2025-06-30,11736283.0,bin TL,Ana ortaklık payları
+tupras,2026_6,nakit,isletme_nakit_akisi,guncel,2026-01-01,2026-06-30,132366363.0,bin TL,İşletme faaliyetlerinden nakit akışları
+tupras,2026_6,nakit,isletme_nakit_akisi,onceki,2025-01-01,2025-06-30,15012559.0,bin TL,İşletme faaliyetlerinden nakit akışları
+tupras,2026_6,nakit,yatirim_nakit_akisi,guncel,2026-01-01,2026-06-30,-13564562.0,bin TL,Yatırım faaliyetlerinden kaynaklanan nakit akışları
+tupras,2026_6,nakit,yatirim_nakit_akisi,onceki,2025-01-01,2025-06-30,-11371542.0,bin TL,Yatırım faaliyetlerinden kaynaklanan nakit akışları
+tupras,2026_6,nakit,finansman_nakit_akisi,guncel,2026-01-01,2026-06-30,-45160214.0,bin TL,Finansman faaliyetlerinden nakit akışları
+tupras,2026_6,nakit,finansman_nakit_akisi,onceki,2025-01-01,2025-06-30,11744926.0,bin TL,Finansman faaliyetlerinden nakit akışları

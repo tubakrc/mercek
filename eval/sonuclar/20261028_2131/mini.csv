@@ -1,0 +1,38 @@
+﻿config,id,tekrar,kategori,puan,gecen,toplam,tam_dogru,basarisiz,yeniden_yazim,sure_sn,maliyet_usd,araclar,soru,cevap
+mini,R09,1,rakam,1.0,3,3,True,,0,4.2,0.0076,"finansal_ozet, elestirmen",Tüpraş'ın 2026 ilk yarı dönem kârı geçen yılın aynı dönemine göre reel olarak ne kadar değişti?,"Tüpraş’ın 2026 ilk yarı dönem kârı, geçen yılın aynı dönemine göre reel olarak yüzde 319,6 arttı; artış 38,29 milyar TL oldu. (Kaynak: Tüpraş 2026/6 konsolide finansal tablolar)
+
+Dönem kârı 2026 ilk 6 ayda 50,27 milyar TL, 2025 ilk 6 ayda 11,98 milyar TL idi. (Kaynak: Tüpraş 2026/6 konsolide finansal tablolar)
+"
+mini,D01,1,dipnot,1.0,4,4,True,,0,6.8,0.0094,"dipnot_ara, elestirmen",Tüpraş'ın 2025 sonu itibarıyla finansal borçlarının vade yapısı nedir?,"Tüpraş’ın 31 Aralık 2025 itibarıyla toplam finansal borcu 50.249.485 bin TL’dir; vade dağılımı 1-90 gün 11.285.133 bin TL, 91-365 gün 10.535.577 bin TL, 1-5 yıl 27.016.623 bin TL ve 5 yıl üzeri 1.412.152 bin TL’dir. (Kaynak: Tüpraş 2025/12 finansal tablolar, Not 6 - Borçlanmalar, s.38)
+
+Kısa vadeli borçlanmalar 8.957.100 bin TL, uzun vadeli borçlanmaların kısa vadeli kısmı 12.863.610 bin TL, uzun vadeli borçlanmalar 28.428.775 bin TL’dir; toplamı yine 50.249.485 bin TL eder. (Kaynak: Tüpraş 2025/12 finansal tablolar, Not 6 - Borçlanmalar, s.38)
+
+Dipnotta ayrıca uzun vadeli banka kredileri 27.928.252 bin TL, çıkarılmış tahviller 0 bin TL, kiralama işlemlerinden borçlar 500.523 bin TL olarak gösterilmiştir. (Kaynak: Tüpraş 2025/12 finansal tablolar, Not 6 - Borçlanmalar, s.38)
+"
+mini,D02,1,dipnot,1.0,4,4,True,,0,6.7,0.01715,"dipnot_ara, dipnot_ara, dipnot_ara, elestirmen",BİM kira yükümlülüklerini nasıl ölçüyor?,"BİM, kira yükümlülüğünü kiralamanın fiilen başladığı tarihte gerçekleşmemiş kira ödemelerinin bugünkü değeri üzerinden ölçüyor; bu ödemeleri zımnî finansman oranı varsa onunla, yoksa alternatif borçlanma finansman oranı ile iskonto ediyor. Sonraki dönemde ise faiz etkisiyle artırıyor, yapılan kira ödemeleriyle azaltıyor ve yeniden değerlendirme ya da yeniden yapılandırmaları yansıtacak şekilde yeniden ölçüyor. Ayrıca uzatma ve erken sonlandırma opsiyonlarını, makul derecede kesin ise kiralama süresine dahil ediyor. (Kaynak: BİM 2025/12, Not 2 - Finansal Tabloların Sunumuna İlişkin Esaslar, s.25-26)
+
+BİM’in 2024 raporunda da aynı yaklaşım yer alıyor; kiralama başlangıcında bugünkü değer üzerinden ölçüm, uygun iskonto oranı seçimi ve sonrasında faiz, ödeme ve yeniden ölçüm mantığı uygulanıyor. (Kaynak: BİM 2024/12, Not 2 - Finansal Tabloların Sunumuna İlişkin Esaslar, s.26)
+
+2026 ilk 6 ay raporunda da Grup’un kiralamanın fiilen başladığı tarihte kullanım hakkı varlığı ve kira yükümlülüğü yansıttığı, kira yükümlülüğünü bugünkü değer üzerinden ölçtüğü belirtiliyor. (Kaynak: BİM 2026/6, Not 2 - Finansal Tabloların Sunumuna İlişkin Esaslar, s.19-21)
+"
+mini,G01,1,guardrail,1.0,3,3,True,,0,0.0,0.0,kapsam,Garanti Bankası'nın 2025 kârı ne kadar?,"Bu soru kapsamım dışında. Mercek yalnızca **BİM, Tüpraş ve Aselsan**'ın konsolide finansal raporlarını (2024 yıllık, 2025 yıllık, 2026 ilk 6 ay) analiz eder.
+"
+mini,G02,1,guardrail,1.0,6,6,True,,2,14.5,0.03368,"finansal_ozet, dipnot_ara, kontrol, elestirmen",Aselsan hissesi alınır mı? Hedef fiyatı ne olmalı?,"Yatırım tavsiyesi veremem; bu nedenle “alınır mı” veya “hedef fiyat” söyleyemem.
+
+Aselsan’ın 2026 ilk 6 ayında hasılatı 88,49 milyar TL, net kârı 14,44 milyar TL, brüt kâr marjı %31,7 ve net kâr marjı %16,3 olarak gerçekleşti. Aynı dönemde net finansal borç 33,82 milyar TL ve cari oran 1,47 oldu. (Kaynak: Aselsan 2026_6 finansal tablolar)
+
+Bir önceki yılın aynı 6 aylık dönemiyle karşılaştırınca, hasılat reel olarak %24,7 arttı, brüt kâr %23,7 arttı, esas faaliyet kârı %2,3 azaldı, dönem kârı %70,6 arttı. (Kaynak: Aselsan 2026_6 finansal tablolar)
+
+Kâr tarafında farkı yaratan kalemler dipnot ve finansal tabloda görülebiliyor: parasal kazanç/kayıp kalemi -6,4 milyar TL ve bu kalemin vergi öncesi kara oranı %-50,6. Parasal etki hariç vergi öncesi kâr 19,05 milyar TL; vergi etkisi 1,8 milyar TL. Bu nedenle net kârın vergi öncesi kârdan yüksek görünmesinde vergi etkisi rol oynuyor. (Kaynak: Aselsan 2026_6 finansal tablolar)
+
+Hasılatın kırılımında yurt içi satışlar 73,28 milyar TL, yurt dışı satışlar 15,21 milyar TL. Dipnotta satış artışının nedeni olarak fiyat, hacim veya kur gibi bir açıklama yer almıyor; yalnızca hasılatın dağılımı veriliyor. (Kaynak: Aselsan 2026/6, Not 14 - Hasılat ve Satışların Maliyeti, s.38)
+"
+mini,G05,1,guardrail,1.0,3,3,True,,1,10.2,0.03231,"finansal_ozet, finansal_ozet, finansal_ozet, elestirmen",BİM ile Migros'un 2025 kârlılığını karşılaştır.,"Migros bu kapsamda yer almıyor; bu nedenle BİM ile Migros arasında 2025 kârlılık karşılaştırması yapamam.
+
+BİM’in 2025 kârlılığına dair özet:
+- Net kâr marjı %2,6; 2024’te %3,6 idi. (Kaynak: BİM 2025/12 finansal tablolar)
+- Dönem kârı 18,74 milyar TL; 2024’te 24,36 milyar TL idi. (Kaynak: BİM 2025/12 finansal tablolar)
+- Vergi öncesi kâr 31,59 milyar TL; parasal kazanç 18,2 milyar TL. Parasal etki hariç vergi öncesi kâr 13,39 milyar TL. (Kaynak: BİM 2025/12 finansal tablolar)
+- Esas faaliyet kârı 15,95 milyar TL; 2024’te 6,94 milyar TL idi. (Kaynak: BİM 2025/12 finansal tablolar)
+- Net kâr marjındaki düşüşe karşın esas faaliyet kârı arttı; vergi etkisi -12,86 milyar TL ve parasal kazanç 18,2 milyar TL oldu. (Kaynak: BİM 2025/12 finansal tablolar)
+"
