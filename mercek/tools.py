@@ -8,7 +8,7 @@ from typing import Literal, Optional
 
 from langchain_core.tools import tool
 
-from mercek import financials
+from mercek import financials, market
 from mercek.retriever import Retriever, format_citation
 
 Sirket = Literal["bim", "tupras", "aselsan"]
@@ -39,8 +39,12 @@ def finansal_ozet(sirket: Sirket, rapor: Rapor) -> str:
 def finansal_trend(sirket: Sirket, kalem: str) -> str:
     """Bir kalemin 2024 sonu, 2025 sonu ve Haziran 2026 değerlerini, hepsi aynı (en güncel) satın alma
     gücüne taşınmış olarak döndürür. Farklı yılları karşılaştıran trend soruları için kullan.
-    kalem örnekleri: hasilat, brut_kar, donem_kari, toplam_varliklar, ozkaynaklar, kisa_vadeli_borclanmalar,
-    uzun_vadeli_borclanmalar, nakit_ve_benzerleri, kiralama_borclari_uv, isletme_nakit_akisi."""
+    Borçluluk trendi için hesaplanmış kalemler: finansal_borc, net_finansal_borc, kira_haric_finansal_borc,
+    toplam_yukumlulukler. Oran serileri (düzeltme gerekmez): net_finansal_borc_ozkaynak, toplam_yukumluluk_ozkaynak,
+    cari_oran, brut_kar_marji_%, esas_faaliyet_kar_marji_%, net_kar_marji_%.
+    Diğer kalemler: hasilat, brut_kar, donem_kari, toplam_varliklar, ozkaynaklar, nakit_ve_benzerleri,
+    kisa_vadeli_borclanmalar, uzun_vadeli_borclanmalar, kiralama_borclari_uv, isletme_nakit_akisi.
+    Aynı şirketin farklı raporları için finansal_ozet'i art arda çağırıp tutarları karşılaştırma; bunun yerine bunu kullan."""
     return _json(financials.trend(sirket, kalem))
 
 
@@ -70,4 +74,16 @@ def dipnot_ara(soru: str, sirket: Optional[Sirket] = None, rapor: Optional[Rapor
     return dipnot_ara_text(soru, sirket, rapor, k)
 
 
-TOOLS = [finansal_ozet, finansal_trend, dipnot_ara]
+@tool
+def fiyat_verisi(sirket: Sirket) -> str:
+    """Hisse fiyatı ve piyasa verisi: son kapanış ve tarihi, 1/3/12 aylık getiri, 52 haftalık aralık, piyasa değeri,
+    F/K (son 12 ay ana ortaklık kârıyla) ve PD/DD. Fiyat, piyasa değeri, değerleme oranı veya hisse performansı
+    soruları için kullan. Fiyatlar nominal TL'dir ve veri tarihi çıktıda yazar. Bu oranlar tek başına ucuz/pahalı
+    yargısı değildir."""
+    return _json(market.fiyat_ozeti(sirket))
+
+
+TOOLS = [finansal_ozet, finansal_trend, dipnot_ara, fiyat_verisi]
+# Multi-agent modunda uzman agent'ların araç grupları
+VERI_TOOLS = [finansal_ozet, finansal_trend, fiyat_verisi]
+DIPNOT_TOOLS = [dipnot_ara]

@@ -20,6 +20,7 @@ except Exception:  # lokalde secrets.toml yoksa
     pass
 
 from mercek import agent as agent_mod  # noqa: E402
+from mercek import config as _config  # noqa: E402
 
 MAX_QUESTIONS = int(os.getenv("MAX_QUESTIONS_PER_SESSION", "10"))
 MAX_CHARS = 400
@@ -31,11 +32,17 @@ ORNEK_SORULAR = [
     "Aselsan'ın özkaynakları son üç dönemde nasıl değişti?",
     "Tüpraş'ın koşullu yükümlülükleri ve verdiği teminatlar neler?",
     "Üç şirketin 2025 brüt kâr marjlarını karşılaştır.",
+    "Aselsan'ın güncel piyasa değeri, F/K ve PD/DD oranları nedir?",
+    "Tüpraş'ın borçluluğu son üç dönemde nasıl değişti ve dipnotlarda borçların vade yapısı nasıl açıklanıyor?",
 ]
 
 ARAC_ADI = {"finansal_ozet": "📊 Finansal özet", "finansal_trend": "📈 Dönem karşılaştırması",
             "dipnot_ara": "🔎 Dipnot araması", "kontrol": "🛡️ Rakam/kural kontrolü",
-            "elestirmen": "🧐 Eleştirmen", "kapsam": "🚦 Kapsam kontrolü"}
+            "elestirmen": "🧐 Eleştirmen", "kapsam": "🚦 Kapsam kontrolü",
+            "fiyat_verisi": "💹 Piyasa verisi", "supervisor": "🧭 Supervisor planı", "bulgu": "📝 Uzman bulguları"}
+AGENT_ADI = {"veri_agent": "Veri agent'ı", "dipnot_agent": "Dipnot agent'ı", "supervisor": "Supervisor",
+             "router": "Router", "kontrol": "Kontrol"}
+MODLAR = {"Multi-agent (supervisor + uzmanlar)": "multi", "Tek agent": "single"}
 
 st.set_page_config(page_title="Mercek", page_icon="🔍", layout="centered")
 
@@ -48,15 +55,16 @@ def _code_version() -> str:
 
 
 @st.cache_resource(show_spinner="Mercek hazırlanıyor…")
-def get_graph(version: str):
+def get_runner(version: str, mode: str):
+    """(graf, ask fonksiyonu). Kod değişince veya mod değişince yeniden kurulur."""
     import importlib
-    from mercek import config, financials, tools, agent  # değişen modülleri yeniden yükle
-    for mod in (config, financials, tools, agent):
+    from mercek import config, financials, market, tools, agent, multi_agent  # değişen modülleri yeniden yükle
+    for mod in (config, financials, market, tools, agent, multi_agent):
         importlib.reload(mod)
-    graph = agent.build_graph()
-    from mercek.tools import _retriever
-    _retriever()  # indeksi ve BM25'i bir kez yükle
-    return graph
+    impl = multi_agent if mode == "multi" else agent
+    graph = impl.build_graph()
+    tools._retriever()  # indeksi ve BM25'i bir kez yükle
+    return graph, impl.ask
 
 
 def render_answer(out: dict) -> None:
@@ -69,10 +77,12 @@ def render_answer(out: dict) -> None:
         with st.expander(f"Agent adımları ({len(out['adimlar'])})"):
             for i, s in enumerate(out["adimlar"], 1):
                 girdi = ", ".join(f"{k}={v}" for k, v in s["girdi"].items())
-                st.markdown(f"**{i}. {ARAC_ADI.get(s['arac'], s['arac'])}**" + (f" `{girdi}`" if girdi else ""))
+                kim = AGENT_ADI.get(s.get("agent", ""), "")
+                st.markdown(f"**{i}. {ARAC_ADI.get(s['arac'], s['arac'])}**" + (f" · *{kim}*" if kim else "")
+                            + (f" `{girdi}`" if girdi else ""))
                 st.code(s["cikti_ozeti"], language=None)
     if out.get("sure"):
-        st.caption(f"{out['sure']:.1f} sn")
+        st.caption(f"{out['sure']:.1f} sn" + (f" · {out['mod']}" if out.get("mod") else ""))
 
 
 # --- durum ----------------------------------------------------------------------------
@@ -85,6 +95,10 @@ with st.sidebar:
     st.markdown("### Kapsam")
     st.markdown("**BİM · Tüpraş · Aselsan**  \nKonsolide finansal raporlar:  \n"
                 "2024 yıllık · 2025 yıllık · 2026 ilk 6 ay")
+    varsayilan = 0 if _config.AGENT_MODE == "multi" else 1
+    mod_adi = st.radio("Mimari", list(MODLAR), index=varsayilan,
+                       help="Multi-agent: supervisor soruyu veri ve dipnot uzmanlarına dağıtır, sentez agent'ı "
+                            "bulguları birleştirir. Tek agent: tek bir agent tüm araçları kullanır.")
     st.markdown("### Örnek sorular")
     for q in ORNEK_SORULAR:
         if st.button(q, use_container_width=True):
@@ -132,8 +146,9 @@ if question:
             t0 = time.time()
             with st.status("Araştırılıyor…", expanded=False) as status:
                 try:
-                    out = agent_mod.ask(question, graph=get_graph(_code_version()),
-                                        on_step=lambda label: status.update(label=f"{label}…"))
+                    graph, ask_fn = get_runner(_code_version(), MODLAR[mod_adi])
+                    out = ask_fn(question, graph=graph, on_step=lambda label: status.update(label=f"{label}…"))
+                    out["mod"] = mod_adi.split(" (")[0]
                     status.update(label="Tamamlandı", state="complete")
                 except Exception as e:  # kullanıcıya iç hata ayrıntısı gösterme
                     status.update(label="Bir hata oluştu", state="error")

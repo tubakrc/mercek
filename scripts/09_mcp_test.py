@@ -26,6 +26,7 @@ CALLS = [
     ("finansal_ozet", {"sirket": "aselsan", "rapor": "2026_6"}),
     ("finansal_trend", {"sirket": "bim", "kalem": "ozkaynaklar"}),
     ("dipnot_ara", {"soru": "kiralama yükümlülükleri TFRS 16", "sirket": "bim", "rapor": "2026_6", "k": 2}),
+    ("fiyat_verisi", {"sirket": "aselsan"}),
     ("bildirim_detay", {"bildirim_id": "garanti-2025_12"}),  # hata yolu
 ]
 

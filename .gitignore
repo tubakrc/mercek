@@ -17,3 +17,6 @@ data/index/embeddings.jsonl
 
 # Diğer
 claude_desktop_config.example.json
+
+# Piyasa verisi önbelleği (anlık görüntü snapshot.json repoya girer)
+data/market/cache.json

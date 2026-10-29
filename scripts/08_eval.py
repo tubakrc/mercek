@@ -19,6 +19,7 @@ Kullanım:
   uv run python scripts/08_eval.py --configs yok,nano,mini  # üç yapılandırmayı karşılaştır
   uv run python scripts/08_eval.py --only R05,R07,G02       # belirli sorular
   uv run python scripts/08_eval.py --configs yok,mini --tekrar 3   # kararlılık için 3 tekrar
+  uv run python scripts/08_eval.py --configs yok,multi --tekrar 3  # tek agent vs multi-agent
 """
 from __future__ import annotations
 
@@ -35,12 +36,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from mercek import config  # noqa: E402
 from mercek import agent as agent_mod  # noqa: E402
+from mercek import multi_agent  # noqa: E402
 
 EVAL_DIR = config.ROOT / "eval"
 CONFIGS = {
-    "yok": {"CRITIC_ENABLED": False},
-    "nano": {"CRITIC_ENABLED": True, "CRITIC_MODEL": "gpt-5.4-nano"},
-    "mini": {"CRITIC_ENABLED": True, "CRITIC_MODEL": "gpt-5.4-mini"},
+    "yok": {"AGENT_MODE": "single", "CRITIC_ENABLED": False},          # tek agent (varsayılan)
+    "nano": {"AGENT_MODE": "single", "CRITIC_ENABLED": True, "CRITIC_MODEL": "gpt-5.4-nano"},
+    "mini": {"AGENT_MODE": "single", "CRITIC_ENABLED": True, "CRITIC_MODEL": "gpt-5.4-mini"},
+    "multi": {"AGENT_MODE": "multi", "CRITIC_ENABLED": False},         # supervisor + uzmanlar + sentez
 }
 CITATION = re.compile(r"Not\s*\d+")
 
@@ -56,7 +59,8 @@ def has_number(expected: float, found: list[float]) -> bool:
 
 def score(q: dict, out: dict) -> dict[str, bool]:
     ans = out["cevap"].split("\n---\n")[0]  # uyarı satırını hariç tut
-    used = [s["arac"] for s in out["adimlar"] if s["arac"] not in ("kontrol", "elestirmen", "kapsam")]
+    used = [s["arac"] for s in out["adimlar"]
+            if s["arac"] not in ("kontrol", "elestirmen", "kapsam", "supervisor", "bulgu")]
     checks: dict[str, bool] = {}
     found = numbers_in(ans)
     for v in q.get("sayilar", []):
@@ -90,14 +94,16 @@ def cost_usd(usage: dict, critic_model: str | None) -> float:
 def run_config(name: str, questions: list[dict], out_dir: Path, repeats: int = 1) -> dict:
     for k, v in CONFIGS[name].items():
         setattr(config, k, v)
-    graph = agent_mod.build_graph()
-    critic_model = config.CRITIC_MODEL if config.CRITIC_ENABLED else None
+    impl = multi_agent if config.AGENT_MODE == "multi" else agent_mod
+    graph = impl.build_graph()
+    critic_model = config.CRITIC_MODEL if (config.CRITIC_ENABLED and impl is agent_mod) else None
     rows = []
-    print(f"\n=== Yapılandırma: {name} (agent={config.AGENT_MODEL}, eleştirmen={critic_model or 'yok'}) ===")
+    print(f"\n=== Yapılandırma: {name} (mimari={config.AGENT_MODE}, model={config.AGENT_MODEL}, "
+          f"eleştirmen={critic_model or 'yok'}) ===")
     for q, rep_i in [(q, r) for q in questions for r in range(repeats)]:
         t0 = time.time()
         try:
-            out = agent_mod.ask(q["soru"], graph=graph)
+            out = impl.ask(q["soru"], graph=graph)
         except Exception as e:
             out = {"cevap": f"HATA: {type(e).__name__}: {e}", "adimlar": [], "kullanim": {}}
         dt = time.time() - t0

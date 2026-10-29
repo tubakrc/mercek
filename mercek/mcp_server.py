@@ -12,6 +12,7 @@ Sunulanlar
     finansal_ozet      Ana kalemler + kodla hesaplanmış oranlar (Streamlit agent'ı ile aynı fonksiyon)
     finansal_trend     Dönemler arası seyir, TMS 29'a göre aynı satın alma gücünde
     dipnot_ara         Dipnotlarda hybrid arama (OpenAI anahtarı yoksa BM25)
+    fiyat_verisi       Hisse fiyatı, getiriler, piyasa değeri, F/K, PD/DD
   Kaynak (resource)
     mercek://metodoloji   TMS 29 yaklaşımı, enflasyon katsayıları, veri kapsamı
   Prompt
@@ -40,7 +41,7 @@ try:  # mcp >= 2.0
 except ImportError:  # mcp 1.x
     from mcp.server.fastmcp import FastMCP as _Server
 
-from mercek import config, financials  # noqa: E402
+from mercek import config, financials, market  # noqa: E402
 from mercek.kap import get_adapter  # noqa: E402
 from mercek.tools import dipnot_ara_text  # noqa: E402
 
@@ -101,8 +102,9 @@ def finansal_ozet(sirket: Sirket, rapor: Rapor) -> str:
 @server.tool()
 def finansal_trend(sirket: Sirket, kalem: str) -> str:
     """Bir kalemin 2024 sonu, 2025 sonu ve Haziran 2026 değerleri, hepsi Haziran 2026 satın alma gücünde
-    (TMS 29), dönemler arası reel değişimlerle. kalem örnekleri: hasilat, brut_kar, donem_kari,
-    toplam_varliklar, ozkaynaklar, uzun_vadeli_borclanmalar, nakit_ve_benzerleri, isletme_nakit_akisi."""
+    (TMS 29), dönemler arası reel değişimlerle. kalem örnekleri: hasilat, brut_kar, donem_kari, ozkaynaklar,
+    finansal_borc, net_finansal_borc, toplam_yukumlulukler; oran serileri: net_finansal_borc_ozkaynak, cari_oran,
+    brut_kar_marji_%, net_kar_marji_%."""
     return _json(financials.trend(sirket, kalem))
 
 
@@ -111,6 +113,13 @@ def dipnot_ara(soru: str, sirket: Optional[Sirket] = None, rapor: Optional[Rapor
     """Dipnotlarda (açıklayıcı notlar) arama yapar; her sonuç şirket, rapor, not numarası ve sayfa atfıyla
     gelir. Muhasebe politikaları, borç vadesi/döviz yapısı, riskler, taahhütler, koşullu yükümlülükler için."""
     return dipnot_ara_text(soru, sirket, rapor, k)
+
+
+@server.tool()
+def fiyat_verisi(sirket: Sirket) -> str:
+    """Hisse fiyatı ve piyasa verisi (Yahoo Finance): son kapanış ve tarihi, 1/3/12 aylık getiri, 52 haftalık aralık,
+    piyasa değeri, F/K (son 12 ay ana ortaklık kârı, Haziran 2026 satın alma gücü) ve PD/DD. Fiyatlar nominal TL'dir."""
+    return _json(market.fiyat_ozeti(sirket))
 
 
 # --- Kaynak ve prompt ----------------------------------------------------------------------

@@ -12,7 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from mercek.agent import ask  # noqa: E402
+from mercek import agent, multi_agent  # noqa: E402
 
 DEMO = [
     "Tüpraş'ın 2026 ilk yarı hasılatı geçen yılın aynı dönemine göre ne kadar arttı ve dipnotlarda bunun nedeni hakkında ne var?",
@@ -21,10 +21,12 @@ DEMO = [
 ]
 
 if __name__ == "__main__":
-    questions = [" ".join(sys.argv[1:])] if len(sys.argv) > 1 else DEMO
+    args = [a for a in sys.argv[1:] if a != "--multi"]
+    ask = multi_agent.ask if "--multi" in sys.argv else agent.ask
+    questions = [" ".join(args)] if args else DEMO
     for q in questions:
         print("=" * 100 + f"\nSORU: {q}\n")
         out = ask(q)
         for i, s in enumerate(out["adimlar"], 1):
-            print(f"  adım {i}: {s['arac']}({json.dumps(s['girdi'], ensure_ascii=False)})")
+            print(f"  adım {i}: [{s.get('agent', 'agent')}] {s['arac']}({json.dumps(s['girdi'], ensure_ascii=False)})")
         print("\n" + out["cevap"] + "\n")

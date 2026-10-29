@@ -1,0 +1,41 @@
+{
+ "bim": {
+  "borsa_kodu": "BIMAS.IS",
+  "para_birimi": "TRY",
+  "kapanis_tarihi": "2026-10-28",
+  "son_kapanis_TL": 364.75,
+  "getiri_1ay_%": -14.5,
+  "getiri_3ay_%": -5.6,
+  "getiri_12ay_%": 28.9,
+  "52h_en_yuksek_TL": 434.75,
+  "52h_en_dusuk_TL": 257.25,
+  "piyasa_degeri_TL": 432513255000.0,
+  "cekim_zamani": "2026-10-29T13:44:39+00:00"
+ },
+ "tupras": {
+  "borsa_kodu": "TUPRS.IS",
+  "para_birimi": "TRY",
+  "kapanis_tarihi": "2026-10-28",
+  "son_kapanis_TL": 355.0,
+  "getiri_1ay_%": -10.9,
+  "getiri_3ay_%": 19.2,
+  "getiri_12ay_%": 80.5,
+  "52h_en_yuksek_TL": 417.25,
+  "52h_en_dusuk_TL": 183.1,
+  "piyasa_degeri_TL": 684012437290.0,
+  "cekim_zamani": "2026-10-29T13:44:40+00:00"
+ },
+ "aselsan": {
+  "borsa_kodu": "ASELS.IS",
+  "para_birimi": "TRY",
+  "kapanis_tarihi": "2026-10-28",
+  "son_kapanis_TL": 358.5,
+  "getiri_1ay_%": -2.4,
+  "getiri_3ay_%": 1.1,
+  "getiri_12ay_%": 69.6,
+  "52h_en_yuksek_TL": 434.0,
+  "52h_en_dusuk_TL": 176.0,
+  "piyasa_degeri_TL": 1634760000000.0,
+  "cekim_zamani": "2026-10-29T13:44:40+00:00"
+ }
+}

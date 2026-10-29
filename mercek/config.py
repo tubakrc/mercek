@@ -42,3 +42,6 @@ PRICES = {
     "gpt-5.4-mini": (0.75, 4.50),
     "gpt-5.4-nano": (0.20, 1.25),
 }
+
+# Mimari: "single" = tek ReAct agent; "multi" = supervisor + veri/dipnot uzmanları + sentez (mercek/multi_agent.py)
+AGENT_MODE = os.getenv("AGENT_MODE", "single")

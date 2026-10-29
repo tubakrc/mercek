@@ -104,6 +104,30 @@ def oranlar_kolon(sirket: str, rapor: str, kolon: str) -> dict:
     return out
 
 
+def net_kar_koprusu(sirket: str, rapor: str) -> dict | None:
+    """Dönem kârındaki değişimi (güncel - önceki, aynı rapor = aynı satın alma gücü) bileşenlerine ayırır.
+    esas faaliyet + yatırım/finansman/diğer + parasal kazanç/kayıp + vergi = dönem kârı değişimi (tam olarak)."""
+    g = lambda k, c: get(sirket, rapor, k, c)
+    keys = ("esas_faaliyet_kari", "parasal_kazanc_kayip", "vergi_oncesi_kar", "donem_kari")
+    if any(g(k, c) is None for k in keys for c in ("guncel", "onceki")):
+        return None
+    d = lambda k: g(k, "guncel") - g(k, "onceki")
+    vergi = lambda c: g("donem_kari", c) - g("vergi_oncesi_kar", c)
+    d_efk, d_par, d_dk = d("esas_faaliyet_kari"), d("parasal_kazanc_kayip"), d("donem_kari")
+    d_vergi = vergi("guncel") - vergi("onceki")
+    items = {"esas_faaliyet_kari": d_efk, "yatirim_finansman_ve_diger": d_dk - d_efk - d_par - d_vergi,
+             "parasal_kazanc_kayip": d_par, "vergi": d_vergi}
+    out = {f"{k}_degisimi_milyar_TL": _milyar(v) for k, v in items.items()}
+    out["donem_kari_degisimi_milyar_TL"] = _milyar(d_dk)
+    neg = min(items, key=items.get)
+    pos = max(items, key=items.get)
+    out["en_buyuk_olumsuz_etki"] = neg if items[neg] < 0 else None
+    out["en_buyuk_olumlu_etki"] = pos if items[pos] > 0 else None
+    out["aciklama"] = ("Bileşenlerin toplamı dönem kârı değişimine eşittir. Faaliyet kârı ile net kâr farklı yönlere "
+                       "gidiyorsa farkı en_buyuk_olumsuz_etki / en_buyuk_olumlu_etki açıklar.")
+    return out
+
+
 def ozet(sirket: str, rapor: str) -> dict:
     """Bir raporun ana kalemleri, oranları ve aynı rapor içindeki (reel) değişimler."""
     vals, periods = _facts()
@@ -135,6 +159,7 @@ def ozet(sirket: str, rapor: str) -> dict:
         "kalemler": kalemler,
         "oranlar": {kol: oranlar_kolon(sirket, rapor, kol) for kol in ("guncel", "onceki")},
         "degisim": degisim,
+        "net_kar_koprusu": net_kar_koprusu(sirket, rapor),
         "not": ("Tutarlar TMS 29'a göre bu raporun tarihindeki satın alma gücüyle ifade edilmiştir; "
                 "guncel/onceki karşılaştırması reel değişimdir. Ara dönem (2026_6) gelir tablosunda 'onceki' "
                 "geçen yılın aynı 6 aylık dönemidir, bilançoda ise önceki yıl sonudur. "
@@ -161,46 +186,96 @@ def enflasyon_katsayilari() -> dict[str, float]:
     return out
 
 
+# finansal_trend'in desteklediği hesaplanmış kalemler (rapor bazında bileşenlerden hesaplanır)
+def _fin_borc(g):
+    return _sum(g("kisa_vadeli_borclanmalar"), g("uzun_vadeli_borclanmalarin_kisa_kismi"), g("uzun_vadeli_borclanmalar"))
+
+
+TUREV_TUTAR = {
+    "finansal_borc": ("Finansal borç (KV + UV borçlanmalar, kira dahil)", _fin_borc),
+    "net_finansal_borc": ("Net finansal borç (finansal borç - nakit)",
+                          lambda g: None if _fin_borc(g) is None else _fin_borc(g) - (g("nakit_ve_benzerleri") or 0)),
+    "kira_haric_finansal_borc": ("Kira hariç finansal borç",
+                                 lambda g: None if _fin_borc(g) is None or _sum(g("kiralama_borclari_kv"), g("kiralama_borclari_uv")) is None
+                                 else _fin_borc(g) - _sum(g("kiralama_borclari_kv"), g("kiralama_borclari_uv"))),
+    "toplam_yukumlulukler": ("Toplam yükümlülükler",
+                             lambda g: _sum(g("kisa_vadeli_yukumlulukler"), g("uzun_vadeli_yukumlulukler"))),
+}
+# Oranlar aynı raporun pay ve paydasından hesaplandığı için enflasyon düzeltmesi gerektirmez
+TUREV_ORAN = {
+    "net_finansal_borc_ozkaynak": "Net finansal borç / özkaynak",
+    "toplam_yukumluluk_ozkaynak": "Toplam yükümlülük / özkaynak",
+    "cari_oran": "Cari oran",
+    "brut_kar_marji_%": "Brüt kâr marjı (%)",
+    "esas_faaliyet_kar_marji_%": "Esas faaliyet kâr marjı (%)",
+    "net_kar_marji_%": "Net kâr marjı (%)",
+}
+
+
 def trend(sirket: str, kalem: str) -> dict:
-    """Bir kalemin raporlar boyunca seyri; hepsi en son raporun satın alma gücüne taşınmış olarak."""
-    if kalem not in KALEM_ADLARI:
-        return {"hata": f"Bilinmeyen kalem '{kalem}'. Geçerli kalemler: {sorted(KALEM_ADLARI)}"}
+    """Bir kalemin raporlar boyunca seyri. Tutarlar en son raporun satın alma gücüne taşınır; oranlar olduğu gibi
+    verilir (pay ve payda aynı rapordan olduğu için enflasyon düzeltmesi gerekmez)."""
+    gecerli = sorted(KALEM_ADLARI) + sorted(TUREV_TUTAR) + sorted(TUREV_ORAN)
+    if kalem not in gecerli:
+        return {"hata": f"Bilinmeyen kalem '{kalem}'. Geçerli kalemler: {gecerli}"}
     f = enflasyon_katsayilari()
     hedef = RAPORLAR[-1]
+    oran = kalem in TUREV_ORAN
+    ad = TUREV_ORAN.get(kalem) or (TUREV_TUTAR[kalem][0] if kalem in TUREV_TUTAR else KALEM_ADLARI[kalem])
+    deg_key = "deger" if oran else f"{hedef}_satin_alma_gucuyle_milyar_TL"
+
+    def value(rapor):
+        g = lambda k: get(sirket, rapor, k, "guncel")
+        if oran:
+            return oranlar_kolon(sirket, rapor, "guncel").get(kalem)
+        if kalem in TUREV_TUTAR:
+            return TUREV_TUTAR[kalem][1](g)
+        return g(kalem)
+
     seri = []
     for i, rapor in enumerate(RAPORLAR):
-        v = get(sirket, rapor, kalem, "guncel")
+        v = value(rapor)
         if v is None:
             continue
         carpan = 1.0
         for r in RAPORLAR[i:-1]:
             carpan *= f.get(r, float("nan"))
-        p = _facts()[1][(sirket, rapor, kalem, "guncel")]
+        p = _facts()[1].get((sirket, rapor, "toplam_varliklar", "guncel"), ("", ""))
+        if kalem in KALEM_ADLARI:
+            p = _facts()[1][(sirket, rapor, kalem, "guncel")]
         seri.append({
             "rapor": rapor, "donem": p[1] if p[0] == p[1] else f"{p[0]} / {p[1]}",
             "donem_tipi": "6 aylık" if rapor.endswith("_6") else "12 aylık",
-            f"{hedef}_satin_alma_gucuyle_milyar_TL": _milyar(v * carpan),
+            deg_key: v if oran else _milyar(v * carpan),
         })
-    # Dönemler arası değişim (aynı satın alma gücünde). Gelir/nakit kalemlerinde 12 aylık -> 6 aylık
-    # karşılaştırması anlamsız olduğu için yalnızca bilanço kalemlerinde (tarih itibarıyla) hesaplanır.
-    akim = get(sirket, "2025_12", kalem, "guncel") is not None and \
+    # Gelir/nakit kalemlerinde 12 aylık -> 6 aylık karşılaştırması anlamsızdır; yalnızca aynı dönem tipleri
+    akim = kalem in KALEM_ADLARI and get(sirket, "2025_12", kalem, "guncel") is not None and \
         _facts()[1][(sirket, "2025_12", kalem, "guncel")][0] != _facts()[1][(sirket, "2025_12", kalem, "guncel")][1]
-    deg_key = f"{hedef}_satin_alma_gucuyle_milyar_TL"
+    akim = akim or kalem in ("brut_kar_marji_%", "esas_faaliyet_kar_marji_%", "net_kar_marji_%")
     degisimler = []
     for a, b in zip(seri, seri[1:]):
         if akim and a["donem_tipi"] != b["donem_tipi"]:
             continue
+        d = {"donem": f"{a['rapor']} -> {b['rapor']}"}
+        if oran:
+            d["fark_puan"] = round(b[deg_key] - a[deg_key], 2)
+        else:
+            d["fark_milyar_TL"] = round(b[deg_key] - a[deg_key], 2)
+            if a[deg_key] and a[deg_key] > 0 and b[deg_key] is not None:
+                d["reel_degisim_%"] = round(100 * (b[deg_key] / a[deg_key] - 1), 1)
+        degisimler.append(d)
+    if seri and not oran and len(seri) >= 2 and not akim:
+        a, b = seri[0], seri[-1]
+        tot = {"donem": f"{a['rapor']} -> {b['rapor']} (toplam)", "fark_milyar_TL": round(b[deg_key] - a[deg_key], 2)}
         if a[deg_key] and a[deg_key] > 0:
-            degisimler.append({"donem": f"{a['rapor']} -> {b['rapor']}",
-                               "reel_degisim_%": round(100 * (b[deg_key] / a[deg_key] - 1), 1),
-                               "fark_milyar_TL": round(b[deg_key] - a[deg_key], 2)})
+            tot["reel_degisim_%"] = round(100 * (b[deg_key] / a[deg_key] - 1), 1)
+        degisimler.append(tot)
     return {
-        "sirket": config.SIRKETLER.get(sirket, sirket), "kalem": KALEM_ADLARI[kalem], "seri": seri,
-        "degisimler": degisimler,
+        "sirket": config.SIRKETLER.get(sirket, sirket), "kalem": ad, "seri": seri, "degisimler": degisimler,
         "enflasyon_katsayilari": {k: round(v, 4) for k, v in f.items()},
-        "not": ("Tüm değerler aynı satın alma gücündedir; seriyi ve değişimleri doğrudan kullan. "
-                "Bu değerleri finansal_ozet'in rapor bazlı tutarlarıyla KARIŞTIRMA. Gelir tablosu "
-                "kalemlerinde 6 aylık dönem 12 aylıkla kıyaslanmaz; 6 aylık için ozet() içindeki "
-                "geçen yılın aynı dönemiyle karşılaştırmayı kullan."),
+        "not": ("Oran serisi: enflasyon düzeltmesi gerekmez, değerler doğrudan karşılaştırılabilir." if oran else
+                "Tüm tutarlar aynı satın alma gücündedir; seriyi ve değişimleri doğrudan kullan. Bu değerleri "
+                "finansal_ozet'in rapor bazlı tutarlarıyla KARIŞTIRMA. Gelir tablosu kalemlerinde 6 aylık dönem "
+                "12 aylıkla kıyaslanmaz; 6 aylık için finansal_ozet'teki geçen yılın aynı dönemini kullan."),
         "kaynak": "financials.csv; katsayılar raporların karşılaştırmalı sütunlarından türetildi",
     }

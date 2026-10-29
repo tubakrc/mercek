@@ -34,17 +34,22 @@ attrs==26.1.0
     #   referencing
 bcrypt==5.0.0
     # via chromadb
+beautifulsoup4==4.15.0
+    # via yfinance
 build==1.6.1
     # via chromadb
 certifi==2026.10.23
     # via
+    #   curl-cffi
     #   httpcore
     #   httpx
     #   kubernetes
     #   langchain-openai
     #   requests
-cffi==2.1.1 ; platform_python_implementation != 'PyPy'
-    # via cryptography
+cffi==2.1.1
+    # via
+    #   cryptography
+    #   curl-cffi
 charset-normalizer==3.5.2
     # via requests
 chromadb==1.5.9
@@ -61,6 +66,8 @@ colorama==0.4.6 ; os_name == 'nt' or sys_platform == 'win32'
     #   typer
 cryptography==50.0.2
     # via pyjwt
+curl-cffi==0.17.0
+    # via yfinance
 distro==1.9.0
     # via langsmith
 durationpy==0.11
@@ -164,6 +171,8 @@ langgraph-sdk==0.4.10
     # via langgraph
 langsmith==0.14.14
     # via langchain-core
+lxml==6.1.3
+    # via yfinance
 markdown-it-py==4.2.0
     # via rich
 markupsafe==3.0.4
@@ -180,6 +189,8 @@ multidict==7.2.1
     # via
     #   aiohttp
     #   yarl
+multitasking==0.0.13
+    # via yfinance
 narwhals==2.28.0
     # via altair
 networkx==3.7
@@ -194,6 +205,7 @@ numpy==2.5.4
     #   pymupdf
     #   rank-bm25
     #   streamlit
+    #   yfinance
 oauthlib==4.0.0
     # via requests-oauthlib
 onnxruntime==1.31.1
@@ -247,9 +259,15 @@ packaging==26.3
     #   onnxruntime
     #   streamlit
 pandas==3.1.0
-    # via streamlit
+    # via
+    #   streamlit
+    #   yfinance
+peewee==4.5.3
+    # via yfinance
 pillow==13.0.0
     # via streamlit
+platformdirs==4.14.0
+    # via yfinance
 propcache==0.5.4
     # via
     #   aiohttp
@@ -260,13 +278,14 @@ protobuf==7.36.2
     #   onnxruntime
     #   opentelemetry-proto
     #   streamlit
+    #   yfinance
 psutil==7.2.2
     # via pymupdf
 pyarrow==26.0.0
     # via streamlit
 pybase64==1.5.1
     # via chromadb
-pycparser==3.12 ; implementation_name != 'PyPy' and platform_python_implementation != 'PyPy'
+pycparser==3.12 ; implementation_name != 'PyPy'
     # via cffi
 pydantic==2.14.1
     # via
@@ -314,6 +333,8 @@ python-multipart==0.0.32
     # via
     #   mcp
     #   streamlit
+pytz==2026.6
+    # via yfinance
 pywin32==312 ; sys_platform == 'win32'
     # via mcp
 pyyaml==6.0.3
@@ -340,6 +361,7 @@ requests==2.34.2
     #   requests-toolbelt
     #   streamlit
     #   tiktoken
+    #   yfinance
 requests-oauthlib==2.0.0
     # via kubernetes
 requests-toolbelt==1.0.0
@@ -360,6 +382,8 @@ sniffio==1.3.1
     # via
     #   langsmith
     #   openai
+soupsieve==3.0.4
+    # via beautifulsoup4
 sse-starlette==3.6.0
     # via mcp
 starlette==1.10.0
@@ -395,6 +419,7 @@ typing-extensions==4.16.0
     #   aiosignal
     #   altair
     #   anyio
+    #   beautifulsoup4
     #   chromadb
     #   grpcio
     #   httpx2
@@ -453,12 +478,15 @@ websockets==17.3
     #   langsmith
     #   streamlit
     #   uvicorn
+    #   yfinance
 xxhash==4.0.2
     # via
     #   langgraph
     #   langsmith
 yarl==1.25.1
     # via aiohttp
+yfinance==1.7.0
+    # via mercek
 zstandard==0.25.0
     # via langsmith
 pysqlite3-binary; sys_platform == "linux"

@@ -49,9 +49,6 @@
    "kategori": "trend",
    "soru": "Aselsan'ın özkaynakları son üç dönemde nasıl değişti?",
    "sayilar": [
-    217.89,
-    296.5,
-    308.52,
     36.1,
     4.1
    ],
@@ -61,7 +58,18 @@
    "yasak": [
     "141[.,]36",
     "251[.,]79"
-   ]
+   ],
+   "gerekli": [
+    "satın alma gücü|TMS 29|enflasyon"
+   ],
+   "sayilar_herhangi": [
+    [
+     308.52,
+     90.63,
+     41.6
+    ]
+   ],
+   "_not": "'Nasıl değişti' sorusunda değişimler yeterli (R02/R09/R12 ile aynı kural). Eval 6'da tek agent yalnızca değişimleri verdi; doğruydu ama eski kontrol tutarları da istiyordu."
   },
   {
    "id": "R05",
@@ -309,6 +317,53 @@
     2.6
    ],
    "_not": "Karma soru: kapsam içi şirket (BİM) cevaplanmalı, kapsam dışı (Migros) için veri olmadığı söylenmeli."
+  },
+  {
+   "id": "P01",
+   "kategori": "piyasa",
+   "soru": "Aselsan'ın güncel piyasa değeri, F/K ve PD/DD oranları nedir?",
+   "araclar": [
+    "fiyat_verisi"
+   ],
+   "gerekli": [
+    "F/K",
+    "PD/DD",
+    "20\\d\\d-\\d\\d-\\d\\d|\\d{1,2} \\w+ 20\\d\\d|tarih"
+   ],
+   "yasak": [
+    "\\b(ucuz|pahalı|cazip)\\b",
+    "alım fırsatı"
+   ],
+   "_not": "Piyasa verisi canlı olduğu için rakam beklenmez; araç, oranlar, veri tarihi ve değerleme yorumu yasağı ölçülür."
+  },
+  {
+   "id": "M01",
+   "kategori": "karma",
+   "soru": "Tüpraş'ın borçluluğu son üç dönemde nasıl değişti ve dipnotlarda borçların vade yapısı nasıl açıklanıyor?",
+   "araclar": [
+    "finansal_trend",
+    "dipnot_ara"
+   ],
+   "kaynak": true,
+   "gerekli": [
+    "vade",
+    "satın alma gücü|TMS 29|enflasyon"
+   ],
+   "_not": "Başlangıç planındaki örnek sorunun uyarlaması. İlk multi-agent denemesinde: (1) farklı raporların düzeltilmemiş tutarları yan yana kondu (2024 finansal borç 18,99 = Aralık 2024 fiyatı; doğrusu 29,27), (2) dipnot tablosundan yanlış sütun okundu (51.003.495, 2023 sütunu karışmış). Beklenen: aynı satın alma gücündeki trend değerlerinden en az biri.",
+   "sayilar_herhangi": [
+    [
+     29.27,
+     59.17,
+     68.2,
+     127.64,
+     84.07,
+     67.11
+    ]
+   ],
+   "yasak": [
+    "18[,.]99",
+    "51[.,]003[.,]495"
+   ]
   }
  ]
 }

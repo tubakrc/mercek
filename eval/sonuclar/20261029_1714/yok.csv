@@ -1,0 +1,80 @@
+﻿config,id,tekrar,kategori,puan,gecen,toplam,tam_dogru,basarisiz,yeniden_yazim,sure_sn,maliyet_usd,araclar,soru,cevap
+yok,R04,1,trend,0.7,7,10,False,"sayi:217.89, sayi:296.5, sayi:308.52",0,3.6,0.00528,"finansal_trend, kontrol",Aselsan'ın özkaynakları son üç dönemde nasıl değişti?,"Aselsan’ın özkaynakları son üç dönemde reel olarak artmış görünüyor: 2024 yıl sonundan 2025 yıl sonuna **78,61 milyar TL** arttı, bu **%36,1** reel artışa denk geliyor; 2025 yıl sonundan 2026 ilk 6 aya ise **12,02 milyar TL** arttı, bu da **%4,1** reel artış. Toplamda 2024 yıl sonundan 2026 ilk 6 aya **90,63 milyar TL** ve **%41,6** reel artış var.  
+(Kaynak: Aselsan finansal_trend, özkaynaklar)
+
+*Not: Dönemler arası tutarlar TMS 29'a göre Haziran 2026 satın alma gücüyle ifade edilmiştir; raporlarda yazan nominal tutarlardan farklıdır.*
+"
+yok,R04,2,trend,0.7,7,10,False,"sayi:217.89, sayi:296.5, sayi:308.52",0,3.0,0.00522,"finansal_trend, kontrol",Aselsan'ın özkaynakları son üç dönemde nasıl değişti?,"Aselsan’ın özkaynakları son üç dönemde reel olarak arttı: 2024 sonundan 2025 sonuna 78,61 milyar TL yükselerek yüzde 36,1 arttı; 2025 sonundan 2026 ilk 6 aya 12,02 milyar TL daha artarak yüzde 4,1 yükseldi. Toplamda 2024 sonundan 2026 ilk 6 aya 90,63 milyar TL artış oldu; bu da yüzde 41,6’lık reel artışa karşılık geliyor. (Kaynak: Aselsan finansal_trend, Özkaynaklar)
+
+*Not: Dönemler arası tutarlar TMS 29'a göre Haziran 2026 satın alma gücüyle ifade edilmiştir; raporlarda yazan nominal tutarlardan farklıdır.*
+"
+yok,R04,3,trend,0.7,7,10,False,"sayi:217.89, sayi:296.5, sayi:308.52",0,3.3,0.00518,"finansal_trend, kontrol",Aselsan'ın özkaynakları son üç dönemde nasıl değişti?,"Aselsan’ın özkaynakları son üç dönemde reel olarak arttı: 2024 yıl sonundan 2025 yıl sonuna 78,61 milyar TL yükselerek %36,1 arttı; 2025 yıl sonundan 2026 ilk 6 aya 12,02 milyar TL yükselerek %4,1 arttı. Toplamda 2024 yıl sonundan 2026 ilk 6 aya 90,63 milyar TL artışla %41,6 yükseldi. (Kaynak: Aselsan finansal_trend, özkaynaklar)
+
+*Not: Dönemler arası tutarlar TMS 29'a göre Haziran 2026 satın alma gücüyle ifade edilmiştir; raporlarda yazan nominal tutarlardan farklıdır.*
+"
+yok,R06,1,yorum,1.0,5,5,True,,0,4.0,0.00756,finansal_ozet,"BİM'in kârlılığı 2025'te arttı mı, azaldı mı?","BİM’in kârlılığı 2025’te karışık bir görünüm verdi: faaliyet kârlılığı arttı, ancak net kârlılık azaldı. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+
+Gerekçe:
+- Brüt kâr marjı %17,5’ten %19,3’e çıktı. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- Esas faaliyet kâr marjı %1,0’dan %2,2’ye yükseldi. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- Net kâr marjı %3,6’dan %2,6’ya geriledi. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- Dönem kârı da 24,36 milyar TL’den 18,74 milyar TL’ye indi; rapordaki reel değişim -%23,1. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- Net kârın baskılanmasında vergi öncesi kârın üzerindeki parasal etki ve vergi etkisi rol oynadı; parasal kazanç/kayıp vergi öncesi kâra oranı %83,4’ten %57,6’ya indi, parasal etki hariç vergi öncesi kâr 5,64 milyar TL’den 13,39 milyar TL’ye çıktı. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+
+Özet: faaliyet tarafı güçlenmiş, ama net kârlılık düşmüş. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+"
+yok,R06,2,yorum,0.8,4,5,False,gerekli1,0,4.0,0.00733,finansal_ozet,"BİM'in kârlılığı 2025'te arttı mı, azaldı mı?","BİM’in kârlılığı 2025’te **karışık** görünüyor: **brüt kârlılık ve esas faaliyet kârlılığı arttı, dönem/net kârlılık ise azaldı**. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+
+- **Brüt kâr marjı** %17,5’ten **%19,3’e** çıktı. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- **Esas faaliyet kâr marjı** %1,0’dan **%2,2’ye** yükseldi. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- **Net kâr marjı** %3,6’dan **%2,6’ya** geriledi. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- **Dönem kârı** da **24,36 milyar TL’den 18,74 milyar TL’ye** düştü. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+
+Kısaca: operasyonel kârlılık artarken, nihai kârlılık düşmüş. Bunun nedeni tabloda **vergi öncesi kârın 33,95 milyar TL’den 31,59 milyar TL’ye gerilemesi** ve ayrıca **vergi etkisinin** devam etmesi. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+"
+yok,R06,3,yorum,1.0,5,5,True,,0,4.2,0.0074,finansal_ozet,"BİM'in kârlılığı 2025'te arttı mı, azaldı mı?","2025’te BİM’in kârlılığı **karışık** görünüyor: **brüt kârlılık ve esas faaliyet kârlılığı arttı, net kârlılık azaldı**. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+
+- **Brüt kâr marjı** %17,5’ten **%19,3’e** çıktı. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- **Esas faaliyet kâr marjı** %1,0’den **%2,2’ye** yükseldi. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- **Net kâr marjı** %3,6’dan **%2,6’ya** düştü. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+- **Dönem kârı** da reel olarak **%23,1 azaldı**. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+
+Kısaca: operasyonel kârlılık tarafı iyileşmiş, ancak **net kâr tarafı gerilemiş**. Bunu rapordaki kalemler arasında özellikle **parasal kazanç/kayıp** ve **vergi etkisi** ayrıştırıyor; net kârın neden düştüğü konusunda sadece bu tabloda görünen veriler şunlar: parasal kazanç/kayıp tutarı ve vergi etkisi. (Kaynak: BİM 2025/12 konsolide finansal tablolar)
+"
+yok,R13,1,birim,0.5,2,4,False,"sayi:6.4, arac:dipnot_ara",0,3.0,0.0,,Aselsan'ın 2026 ilk yarıdaki net parasal pozisyon kaybı ne kadar ve dipnotlarda nasıl açıklanıyor?,HATA: KeyError: 'C:\\mercek_index'
+yok,R13,2,birim,1.0,4,4,True,,0,5.7,0.01259,"finansal_ozet, dipnot_ara, dipnot_ara",Aselsan'ın 2026 ilk yarıdaki net parasal pozisyon kaybı ne kadar ve dipnotlarda nasıl açıklanıyor?,"Aselsan’ın 2026 ilk yarıdaki net parasal pozisyon kaybı **6,40 milyar TL**’dir. Dipnotta bu tutarın **“Net Parasal Pozisyon Kazançları (Kayıpları)”** kalemi olarak ayrı verildiği ve **net kara dahil edildiği** yazıyor; ayrıca bu kalem, **parasal olmayan aktiflere, özkaynak kalemlerine ve gelir tablosu hesaplarına yapılan düzeltmelerin farkı** olarak açıklanıyor. (Kaynak: Aselsan 2026/6, Not 18 - Net Parasal Pozisyon Kazançları (Kayıpları)’na İlişkin Açıklamalar, s.39; Aselsan 2026/6, Not 2 - Konsolide Finansal Tabloların Sunumuna İlişkin Esaslar, s.14-15)
+
+Dipnotta 2026 ilk 6 ay için kırılımda, en büyük etkilerden bazıları **stoklar, maddi duran varlıklar, maddi olmayan duran varlıklar, mali duran varlıklar** ve **geçmiş yıllar karları** kalemlerinden geliyor. Aynı notta ayrıca **hasılat, satışların maliyeti, genel yönetim giderleri, pazarlama giderleri, AR-GE giderleri, esas faaliyetlerden diğer gelir/giderler, finansman geliri ve finansman gideri** için de parasal pozisyon etkisi listelenmiş. Ancak dipnotta bunun altında tek bir “işletme nedeni” verilmemiş; açıklama muhasebesel olarak **TMS 29 kaynaklı parasal olmayan kalem düzeltmesi** şeklinde yapılmış. (Kaynak: Aselsan 2026/6, Not 18 - Net Parasal Pozisyon Kazançları (Kayıpları)’na İlişkin Açıklamalar, s.39)
+"
+yok,R13,3,birim,1.0,4,4,True,,0,4.6,0.01239,"finansal_ozet, dipnot_ara, dipnot_ara",Aselsan'ın 2026 ilk yarıdaki net parasal pozisyon kaybı ne kadar ve dipnotlarda nasıl açıklanıyor?,"Aselsan’ın 2026 ilk yarıdaki net parasal pozisyon kaybı **6,40 milyar TL**’dir. (Kaynak: Aselsan 2026/6 finansal tablolar, Not 18 - Net Parasal Pozisyon Kazançları (Kayıpları), s.39)
+
+Dipnotta açıklama şu şekilde veriliyor: net parasal pozisyon kazanç veya kaybı, **parasal olmayan aktiflere, özkaynak kalemlerine ve gelir tablosu hesaplarına yapılan düzeltmelerin farkı** olarak tanımlanıyor; bu tutarın **net kara dahil edildiği** açıkça belirtiliyor. Ayrıca 2026 ilk 6 ay için bu kalem **(6.396.603) bin TL** olarak sunulmuş. (Kaynak: Aselsan 2026/6, Not 2 - Konsolide Finansal Tabloların Sunumuna İlişkin Esaslar, s.14; Aselsan 2026/6, Not 18 - Net Parasal Pozisyon Kazançları (Kayıpları), s.39)
+
+Not: Dipnotlarda ayrıntı kırılımı da verilmiş; örneğin stoklar, maddi duran varlıklar, peşin ödenmiş giderler ve geçmiş yıllar kârları gibi kalemlerin net parasal pozisyona katkıları tek tek listeleniyor. Ancak dipnotta bu kaybın **nedenine dair yönetim yorumu** yok; yani fiyat, hacim, kur gibi bir sebep açıkça yazılmıyor. (Kaynak: Aselsan 2026/6, Not 18 - Net Parasal Pozisyon Kazançları (Kayıpları), s.39)
+"
+yok,M01,1,karma,1.0,9,9,True,,0,5.8,0.01329,"finansal_trend, finansal_trend, finansal_trend, dipnot_ara, dipnot_ara, kontrol",Tüpraş'ın borçluluğu son üç dönemde nasıl değişti ve dipnotlarda borçların vade yapısı nasıl açıklanıyor?,"Tüpraş’ta borçluluk son üç dönemde önce azalmış, sonra belirgin artmış görünüyor: net finansal borç 2024 sonundan 2025 sonuna 16,96 milyar TL iyileşmiş, 2025 sonundan 2026 ilk 6 aya 60,53 milyar TL kötüleşmiş; toplamda 2024 sonuna göre 43,57 milyar TL artmış. Net finansal borç / özkaynak oranı da 2024 sonu -0,19, 2025 sonu -0,15, 2026 ilk 6 ay -0,28. Finansal borç ise 2024 sonu 29,27 milyar TL, 2025 sonu 59,17 milyar TL, 2026 ilk 6 ay 68,20 milyar TL; yani üç dönemde yükselmiş. (Kaynak: Tüpraş finansal trend verileri)
+
+Dipnotlarda borçların vade yapısı şu şekilde açıklanıyor: kısa vadeli borçlanmalar; kısa vadeli banka kredileri, kredi faiz tahakkukları ve diğer kısa vadeli borçlanmalar olarak ayrılıyor. Uzun vadeli borçlanmaların kısa vadeli kısımları ayrıca gösteriliyor; bunların içinde uzun vadeli banka kredilerinin kısa vadeli kısmı, çıkarılmış tahvillerin kısa vadeli kısmı, faiz tahakkukları ve kiralama yükümlülükleri var. Uzun vadeli borçlanmalar ise uzun vadeli banka kredileri ve kiralama işlemlerinden borçlardan oluşuyor. Ayrıca 2026 ilk 6 ay dipnotunda uzun vadeli borçlanmalar için 1-2 yıl, 2-3 yıl, 3-4 yıl gibi vade kırılımı verilmiş. Dipnotta vade yapısı anlatılıyor; ancak borçluluğun artış nedenine ilişkin yönetim yorumu yer almıyor, yalnızca vade bileşenleri ve enstrüman türleri açıklanıyor. (Kaynak: Tüpraş 2026/6, Not 6 - Borçlanmalar, s.22 ve s.24; Tüpraş 2025/12, Not 6 - Borçlanmalar, s.38)
+
+*Not: Dönemler arası tutarlar TMS 29'a göre Haziran 2026 satın alma gücüyle ifade edilmiştir; raporlarda yazan nominal tutarlardan farklıdır.*
+"
+yok,M01,2,karma,0.889,8,9,False,sayi:29.27|59.17|68.2|127.64|84.07|67.11,0,10.5,0.01657,"finansal_trend, finansal_trend, dipnot_ara, dipnot_ara, kontrol",Tüpraş'ın borçluluğu son üç dönemde nasıl değişti ve dipnotlarda borçların vade yapısı nasıl açıklanıyor?,"Tüpraş’ta borçluluk son üç dönemde arttı; **net finansal borç / özkaynak oranı** 2024 sonu **-%19**, 2025 sonu **-%15**, 2026 ilk 6 ay sonunda **-%28** oldu. Buna göre oran 2024 sonundan 2025 sonuna **0,04 puan iyileşti**, 2025 sonundan 2026 ilk 6 aya ise **0,13 puan geriledi**. Ayrıca **finansal borç** 2024 sonundan 2025 sonuna **29,90 milyar TL**, 2025 sonundan 2026 ilk 6 aya **9,03 milyar TL** arttı; toplamda 2024 sonundan 2026 ilk 6 aya **38,93 milyar TL** yükseldi. (Kaynak: Tüpraş 2024_12, 2025_12, 2026_6 finansal trend; Tüpraş 2026/6, Not 29 - Finansal araçlardan kaynaklanan risklerin niteliği ve düzeyi, s.50)
+
+Dipnotlarda borçların vade yapısı şöyle açıklanıyor: 30 Haziran 2026 itibarıyla toplam **borçlanmalar 68.200.679 bin TL** ve bunun içinde **17.579.248 bin TL kısa vadeli borçlanma**, **14.178.331 bin TL uzun vadeli borçlanmaların kısa vadeli kısmı** ve **36.443.100 bin TL uzun vadeli borçlanma** yer alıyor. Not 6’da ayrıca borçlar **kısa vadeli banka kredileri, uzun vadeli kredilerin kısa vadeli kısımları, tahviller ve kiralama borçları** olarak ayrıştırılmış; uzun vadeli borçlar için **1-2 yıl, 2-3 yıl, 3-4 yıl** gibi vade bantları verilmiş. Tüpraş’ın 2026/6 dipnotunda uzun vadeli borçların bir kısmı için ayrıca vade analizi tablolaştırılmış; örneğin 1-2 yıl, 2-3 yıl, 3-4 yıl aralıkları gösterilmiş. (Kaynak: Tüpraş 2026/6, Not 6 - Borçlanmalar, s.22-24)
+
+Dipnotta vade yapısının yanında borç kompozisyonu da açık: kısa vadede **TL krediler**, **ABD doları krediler**, ayrıca **faiz tahakkukları** ve **uzun vadeli borçların kısa vadeli kısımları** bulunuyor; uzun vadede ise **TL krediler, ABD doları krediler, avro krediler ve kiralama borçları** yer alıyor. Ayrıca 2026/6’da **15 Mayıs 2025 tarihli 5 yıl vadeli, ilk 2,5 yılı anapara geri ödemesiz sendikasyon kredisi** ve **10 Mart 2026 tarihli 5 yıl vadeli murabaha finansmanı** da açıklanmış. (Kaynak: Tüpraş 2026/6, Not 6 - Borçlanmalar, s.22-24)
+
+Not: Dipnotta kısa/uzun vade kırılımı var; ama **borçluluğun neden arttığına dair yönetim yorumu bu notta açıkça yazmıyor**. Yani dipnot, vade yapısını anlatıyor; artışın nedeni olarak fiyat, hacim, kur gibi bir açıklama vermiyor. (Kaynak: Tüpraş 2026/6, Not 6 - Borçlanmalar, s.22-24)
+
+*Not: Dönemler arası tutarlar TMS 29'a göre Haziran 2026 satın alma gücüyle ifade edilmiştir; raporlarda yazan nominal tutarlardan farklıdır.*
+"
+yok,M01,3,karma,1.0,9,9,True,,0,8.4,0.01662,"finansal_trend, finansal_trend, finansal_trend, dipnot_ara, dipnot_ara, kontrol",Tüpraş'ın borçluluğu son üç dönemde nasıl değişti ve dipnotlarda borçların vade yapısı nasıl açıklanıyor?,"Tüpraş’ın borçluluğu son üç dönemde dalgalı seyretti: net finansal borç 2024 sonundan 2025 sonuna doğru **84,07 milyar TL net nakit pozisyonundan 67,11 milyar TL net nakde** geldi; 2026 ilk 6 ay sonunda ise **127,64 milyar TL net nakde** çıktı. Yani 2025 sonuna göre net nakit **60,53 milyar TL azaldı**; 2024 sonuna göre ise toplamda **43,57 milyar TL azaldı**. Borçluluk oranı da aynı yönde oynadı: **net finansal borç / özkaynak** 2024 sonunda **-0,19**, 2025 sonunda **-0,15**, 2026 ilk 6 ay sonunda **-0,28** oldu. (Kaynak: Tüpraş finansal_trend; finansal borç, net finansal borç, net finansal borç/özkaynak)
+
+Kaba borç tarafında **finansal borç** 2024 sonunda **29,27 milyar TL**, 2025 sonunda **59,17 milyar TL**, 2026 ilk 6 ay sonunda **68,20 milyar TL** oldu. Değişim: 2024 sonundan 2025 sonuna **29,90 milyar TL artış**, 2025 sonundan 2026 ilk 6 aya **9,03 milyar TL artış**, toplamda **38,93 milyar TL artış**. (Kaynak: Tüpraş finansal_trend; finansal borç)
+
+Dipnotlara göre vade yapısı şöyle açıklanıyor: 2026/6 Not 6’da borçlanmalar **kısa vadeli borçlanmalar**, **uzun vadeli borçlanmaların kısa vadeli kısımları** ve **uzun vadeli borçlanmalar** olarak ayrılmış. Kısa vadeli borçlanmaların içinde banka kredileri ve faiz tahakkukları yer alıyor; uzun vadeli borçlanmaların kısa vadeli kısmında ise TL krediler, TL tahviller, ABD doları ve avro krediler ile kiralama borçları bulunuyor. Uzun vadeli borçlanmaların vade analizi ayrıca **1-2 yıl, 2-3 yıl, 3-4 yıl ve 4-5 yıl** kırılımında veriliyor; yani borçların önemli kısmı bir yıldan uzun vadeye yayılmış durumda. Ayrıca dipnotta, 30 Haziran 2026 itibarıyla ÖTV ve SGK borçlarının ödenmesinde bankalar tarafından sağlanan **395.872 bin TL faizsiz kredi** de belirtiliyor. (Kaynak: Tüpraş 2026/6, Not 6 - Borçlanmalar, s.22 ve s.24)
+
+Dipnotta ayrıca borçların para birimi kırılımı da var: TL krediler, ABD doları krediler, avro krediler ve kiralama borçları ayrı ayrı gösterilmiş. Ancak borçların neden arttığına ilişkin bir yönetim yorumu bu notta yer almıyor; dipnot sadece **vade, para birimi ve borç türü kırılımını** açıklıyor. (Kaynak: Tüpraş 2026/6, Not 6 - Borçlanmalar, s.22 ve s.24)
+
+*Not: Dönemler arası tutarlar TMS 29'a göre Haziran 2026 satın alma gücüyle ifade edilmiştir; raporlarda yazan nominal tutarlardan farklıdır.*
+"
