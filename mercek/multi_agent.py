@@ -28,7 +28,8 @@ from langgraph.graph import END, START, StateGraph
 
 from mercek import config
 from mercek.agent import (ADVICE_PREFIX, ADVICE_REFUSAL, DISCLAIMER, FOREIGN_SCRIPT, LEAKED_PREAMBLE,
-                          OUT_OF_SCOPE_ANSWER, check_answer, ensure_tms_note, period_problems, route_question,
+                          OUT_OF_SCOPE_ANSWER, check_answer, ensure_tms_note, ensure_valuation_note,
+                          period_problems, route_question,
                           summarize_tool,
                           ungrounded, unit_problems)
 from mercek.tools import DIPNOT_TOOLS, VERI_TOOLS
@@ -110,6 +111,33 @@ olarak birleştirirsin. Araç kullanamazsın.
 {COMMON}"""
 
 FEEDBACK_PREFIX = "[İÇ KONTROL NOTU - kullanıcıya görünmez] "
+
+# Kullanıcıya iç süreçten bahseden cümleler (prompt kuralı tek başına yetmedi; kodla temizlenir)
+INTERNAL_TERMS = re.compile(r"\b(veri uzman|dipnot uzman|uzman(lar)?(ın|ın?a|dan|ı)?\b|bulgular|bulgulara|"
+                            r"veri agent|dipnot agent|supervisor|sentez agent)", re.I)
+
+
+def strip_internal(answer: str) -> tuple[str, int]:
+    """İç terim içeren cümleleri çıkarır. Dönüş: (temiz cevap, çıkarılan cümle sayısı)."""
+    # 1) Yalnızca kalıp ifadeyi çıkar, cümleyi koru: "Bulgulara göre BİM'in marjı..." -> "BİM'in marjı..."
+    def _cap(m):
+        rest = m.group(2)
+        return m.group(1) + (rest[:1].upper() + rest[1:] if rest else "")
+    answer = re.sub(r"(^|[.!?:]\s+|\n|\*\*)(?:(?:verilen |uzman |veri uzmanının |dipnot uzmanının |uzmanların )?"
+                    r"(?:bulgular(?:ın)?a|bulgularına|tespitine|verdiği bilgiye|verdiği bilgilere) göre,?\s*)(\w?)",
+                    _cap, answer, flags=re.I)
+    removed, lines = 0, []
+    for line in answer.split("\n"):
+        if not INTERNAL_TERMS.search(line):
+            lines.append(line)
+            continue
+        sentences = re.split(r"(?<=[.!?])\s+", line)
+        kept = [s for s in sentences if not INTERNAL_TERMS.search(s)]
+        removed += len(sentences) - len(kept)
+        rest = " ".join(kept).strip()
+        if rest and not re.fullmatch(r"\**\s*(Gerekçe|Not|Özet)\s*:?\s*\**", rest, re.I):
+            lines.append(rest)
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip(), removed
 
 
 class MState(TypedDict, total=False):
@@ -285,6 +313,10 @@ def ask(question: str, graph=None, on_step=None) -> dict:
                       "cikti_ozeti": "Yeniden yazdırıldı: " + " ".join(state.get("kontrol") or [])})
 
     answer = LEAKED_PREAMBLE.sub("", state.get("cevap", "")).lstrip()
+    answer, n_internal = strip_internal(answer)
+    if n_internal:
+        steps.append({"arac": "kontrol", "agent": "kontrol", "girdi": {},
+                      "cikti_ozeti": f"İç süreçten bahseden {n_internal} cümle cevaptan çıkarıldı."})
     if route.get("tavsiye_sorusu") and not ADVICE_REFUSAL.search(answer):
         answer = ADVICE_PREFIX + answer
         steps.append({"arac": "kapsam", "agent": "router", "girdi": {},
@@ -303,9 +335,13 @@ def ask(question: str, graph=None, on_step=None) -> dict:
     for u in state.get("kullanim", []):
         tot["input_tokens"] += u["input_tokens"]
         tot["output_tokens"] += u["output_tokens"]
-    answer, added = ensure_tms_note(answer, [(o["name"], o["content"]) for o in state.get("arac_ciktilari", [])])
+    outs = [(o["name"], o["content"]) for o in state.get("arac_ciktilari", [])]
+    answer, added = ensure_tms_note(answer, outs)
     if added:
         steps.append({"arac": "kontrol", "agent": "kontrol", "girdi": {},
                       "cikti_ozeti": "TMS 29 (satın alma gücü) notu eklendi."})
+    answer, added = ensure_valuation_note(answer, outs)
+    if added:
+        steps.append({"arac": "kontrol", "agent": "kontrol", "girdi": {}, "cikti_ozeti": "Değerleme yöntem notu eklendi."})
     return {"cevap": answer + DISCLAIMER, "adimlar": steps, "kaynaklar": list(dict.fromkeys(sources)),
             "kullanim": {"agent": tot, "critic": {"input_tokens": 0, "output_tokens": 0}}}

@@ -203,6 +203,19 @@ TMS_NOTE = ("\n\n*Not: Dönemler arası tutarlar TMS 29'a göre Haziran 2026 sat
             "raporlarda yazan nominal tutarlardan farklıdır.*")
 
 
+VALUATION_NOTE = ("\n\n*Yöntem: F/K, son 12 ay ana ortaklık net kârıyla hesaplanmıştır. Piyasa değeri güncel, "
+                  "finansallar Haziran 2026 satın alma gücünde olduğundan oranlar bir miktar yüksek çıkar. "
+                  "Değerleme oranları tek başına ucuz/pahalı yargısı değildir.*")
+
+
+def ensure_valuation_note(answer: str, tool_outputs: list[tuple[str, str]]) -> tuple[str, bool]:
+    """F/K veya PD/DD cevapta geçiyor ama yöntemi açıklanmıyorsa standart yöntem notunu ekler."""
+    used = any(name == "fiyat_verisi" and '"F/K"' in content for name, content in tool_outputs)
+    if used and re.search(r"F/K|PD/DD", answer) and not re.search(r"son 12 ay|TTM", answer, re.I):
+        return answer + VALUATION_NOTE, True
+    return answer, False
+
+
 def ensure_tms_note(answer: str, tool_outputs: list[tuple[str, str]]) -> tuple[str, bool]:
     """Enflasyona göre düzeltilmiş trend tutarı kullanıldıysa ve cevap bunu belirtmiyorsa standart not ekler."""
     used_restated = any(name == "finansal_trend" and "_satin_alma_gucuyle_milyar_TL" in content
@@ -550,8 +563,12 @@ def ask(question: str, graph=None, on_step=None) -> dict:
     for e in final_state.get("elestiri", []):
         for k in ("input_tokens", "output_tokens"):
             usage["critic"][k] += e.get("usage", {}).get(k, 0)
-    answer, added = ensure_tms_note(answer, [(m.name, str(m.content)) for m in messages if isinstance(m, ToolMessage)])
+    outs = [(m.name, str(m.content)) for m in messages if isinstance(m, ToolMessage)]
+    answer, added = ensure_tms_note(answer, outs)
     if added:
         steps.append({"arac": "kontrol", "girdi": {}, "cikti_ozeti": "TMS 29 (satın alma gücü) notu eklendi."})
+    answer, added = ensure_valuation_note(answer, outs)
+    if added:
+        steps.append({"arac": "kontrol", "girdi": {}, "cikti_ozeti": "Değerleme yöntem notu eklendi."})
     return {"cevap": answer + DISCLAIMER, "adimlar": steps, "kaynaklar": list(dict.fromkeys(sources)),
             "kullanim": usage}
