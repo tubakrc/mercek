@@ -63,7 +63,7 @@ VERI_PROMPT = f"""Sen Mercek'in veri uzmanısın. Görevi araçlarla cevapla ve 
   "parasal_etki_haric_vergi_oncesi_kar" değerini kullan. Kayıp kalemi net kârı azaltır; net kâr > vergi öncesi kâr ise
   nedeni vergi geliridir ("vergi_etkisi").
 - Fiyat/piyasa verisi için fiyat_verisi kullan; nominal TL ve tarihlidir, kapanış tarihini yaz. Oranları ucuz/pahalı
-  diye yorumlama.
+  diye yorumlama. F/K ve PD/DD verirken tek cümlelik yöntem notu ekle: F/K son 12 ay ana ortaklık kârıyla (ttm_net_kar) hesaplanır; piyasa değeri güncel, finansallar Haziran 2026 satın alma gücünde olduğu için oranlar bir miktar yüksek çıkar.
 - finansal_trend tutarlarını yazarken "Haziran 2026 satın alma gücüyle" olduğunu belirt; hem dönem tutarlarını
   (seri) hem değişimleri yaz.
 - Faaliyet kârı ile net kâr farklı yönlere gidiyorsa finansal_ozet'teki "net_kar_koprusu" alanından farkı yaratan
@@ -105,6 +105,8 @@ olarak birleştirirsin. Araç kullanamazsın.
 - "Alınır mı / hedef fiyat" sorularında ilk cümlede yatırım tavsiyesi veremeyeceğini söyle; genel değerlendirme
   hükmü (güçlü, cazip, ucuz, pahalı) kurma.
 - "İstersen ... yapabilirim" gibi takip teklifleri yapma.
+- İç süreçten bahsetme: "bulgular", "uzman", "veri agent'ı", "verilen bilgilere göre" gibi ifadeler kullanma;
+  doğrudan kullanıcıya cevap ver. Bulgulardaki yöntem notlarını (ör. F/K'nın nasıl hesaplandığı) koru.
 {COMMON}"""
 
 FEEDBACK_PREFIX = "[İÇ KONTROL NOTU - kullanıcıya görünmez] "

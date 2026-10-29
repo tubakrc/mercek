@@ -1,0 +1,5 @@
+﻿config,id,tekrar,kategori,puan,gecen,toplam,tam_dogru,basarisiz,yeniden_yazim,sure_sn,maliyet_usd,araclar,soru,cevap
+multi,P01,1,piyasa,1.0,7,7,True,,0,6.1,0.00554,"supervisor, fiyat_verisi, bulgu","Aselsan'ın güncel piyasa değeri, F/K ve PD/DD oranları nedir?","Aselsan’ın güncel piyasa değeri **1.634,76 milyar TL**, **F/K oranı 39,6** ve **PD/DD oranı 5,33**. Veri tarihi **28.10.2026**. (Kaynak: Yahoo Finance, 2026-10-28)
+
+Gerekçe: F/K, son 12 ay ana ortaklık kârıyla hesaplanır; piyasa değeri güncel, finansallar Haziran 2026 satın alma gücünde olduğu için oran bir miktar yüksek çıkabilir. PD/DD ise güncel piyasa değeri ile Haziran 2026 satın alma gücündeki özkaynaklar üzerinden verilmiştir. (Kaynak: Yahoo Finance, 2026-10-28)
+"
