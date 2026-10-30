@@ -51,9 +51,26 @@ st.markdown("""
 [data-testid="stSidebar"] { background-color: #2D198A; }
 [data-testid="stSidebar"] * { color: #D2F4FD; }
 h1, h2, h3 { color: #2D198A; }
-.stButton > button { background-color: #3F2AB0; color: #D2F4FD; border: none; }
-.stButton > button:hover { background-color: #D2F4FD ; color: #3F2AB0; } 
-[data-testid="stSidebar"] .stButton > button { border: 2px solid #D2F4FD; }
+
+/* Varsayılan: koyu zemin, açık yazı */
+.stButton > button,
+.stButton > button:focus,
+.stButton > button:active {
+    background-color: #3F2AB0 !important;
+    border: 2px solid #3F2AB0 !important;
+}
+.stButton > button,
+.stButton > button * { color: #D2F4FD !important; }
+
+/* Hover: açık zemin, koyu yazı */
+.stButton > button:hover {
+    background-color: #D2F4FD !important;
+    border-color: #3F2AB0 !important;
+}
+.stButton > button:hover,
+.stButton > button:hover * { color: #3F2AB0 !important; }
+
+[data-testid="stSidebar"] .stButton > button { border-color: #D2F4FD !important; }
 </style>
 """, unsafe_allow_html=True)
 
