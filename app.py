@@ -165,7 +165,7 @@ with st.sidebar:
 
 # --- başlık -----------------------------------------------------------------------------
 st.title("🔍 Mercek")
-st.markdown("Finansal raporları sizin için okuyan yapay zekâ araştırma asistanı. "
+st.markdown("Finansal raporları sizin için okuyan yapay zeka araştırma asistanı. "
             "Her rakam tablolardan hesaplanır, her açıklama dipnot ve sayfa numarasıyla gelir.")
 
 
