@@ -71,6 +71,28 @@ h1, h2, h3 { color: #2D198A; }
 .stButton > button:hover * { color: #3F2AB0 !important; }
 
 [data-testid="stSidebar"] .stButton > button { border-color: #D2F4FD !important; }
+
+/* Radio: seçili olmayan = boş halka, seçili = dolu daire + kalın yazı */
+[data-testid="stSidebar"] [data-testid="stRadioOption"] > div > div:first-child,
+[data-testid="stSidebar"] [data-baseweb="radio"] > div:first-child {
+    background-color: transparent !important;
+    border: 2px solid #D2F4FD !important;
+    box-shadow: none !important;
+}
+[data-testid="stSidebar"] [data-testid="stRadioOption"] > div > div:first-child > div,
+[data-testid="stSidebar"] [data-baseweb="radio"] > div:first-child > div {
+    background-color: transparent !important;
+}
+[data-testid="stSidebar"] label:has(input:checked) > div > div:first-child,
+[data-testid="stSidebar"] [data-baseweb="radio"]:has(input:checked) > div:first-child {
+    background-color: #D2F4FD !important;
+}
+[data-testid="stSidebar"] label:has(input:checked) > div > div:first-child > div,
+[data-testid="stSidebar"] [data-baseweb="radio"]:has(input:checked) > div:first-child > div {
+    background-color: #2D198A !important;
+}
+[data-testid="stSidebar"] label:has(input:checked) p { font-weight: 700; }
+[data-testid="stSidebar"] label:not(:has(input:checked)) p { opacity: 0.75; }
 </style>
 """, unsafe_allow_html=True)
 
