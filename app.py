@@ -46,6 +46,15 @@ MODLAR = {"Multi-agent (supervisor + uzmanlar)": "multi", "Tek agent": "single"}
 
 st.set_page_config(page_title="Mercek", page_icon="🔍", layout="centered")
 
+st.markdown("""
+<style>
+[data-testid="stSidebar"] { background-color: #B7C86F; }
+[data-testid="stSidebar"] * { color: #1F1A1C; }
+h1, h2, h3 { color: #6E1024; }
+.stButton > button { background-color: #6E1024; color: #FFFFFF; border: none; }
+.stButton > button:hover { background-color: #8A1A30; color: #FFFFFF; }
+</style>
+""", unsafe_allow_html=True)
 
 def _code_version() -> str:
     """mercek/ içindeki .py dosyalarının değişim zamanları: kod değişince önbellek yenilensin."""
