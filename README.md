@@ -1,6 +1,6 @@
 # 🔍 Mercek
 
-**Finansal raporları sizin için okuyan yapay zekâ araştırma asistanı.**
+**Finansal raporları sizin için okuyan yapay zeka araştırma asistanı.**
 
 Mercek; BİM, Tüpraş ve Aselsan'ın konsolide finansal raporlarını (2024 yıllık, 2025 yıllık, 2026 ilk 6 ay) ve hisse piyasa verisini analiz eder. Rakamları tablolardan **kodla hesaplar**, açıklamaları **dipnot ve sayfa numarasıyla** verir ve enflasyon muhasebesinin (TMS 29) dönem karşılaştırmalarına etkisini hesaba katar. İki mimariyle çalışır: **tek agent** (varsayılan) ve **multi-agent** (supervisor + uzman agent'lar).
 
