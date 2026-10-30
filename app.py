@@ -48,11 +48,12 @@ st.set_page_config(page_title="Mercek", page_icon="🔍", layout="centered")
 
 st.markdown("""
 <style>
-[data-testid="stSidebar"] { background-color: #e1eda5; }
-[data-testid="stSidebar"] * { color: #1F1A1C; }
-h1, h2, h3 { color: #6E1024; }
-.stButton > button { background-color: #2D198A; color: #EEF2DA; border: none; }
-.stButton > button:hover { background-color: #D2F4D; color: #D2F4D; }
+[data-testid="stSidebar"] { background-color: #2D198A; }
+[data-testid="stSidebar"] * { color: #D2F4FD; }
+h1, h2, h3 { color: #2D198A; }
+.stButton > button { background-color: #2D198A; color: #D2F4FD; border: none; }
+.stButton > button:hover { background-color: #3F2AB0; color: #D2F4FD; }
+[data-testid="stSidebar"] .stButton > button { border: 1px solid #D2F4FD; }
 </style>
 """, unsafe_allow_html=True)
 
