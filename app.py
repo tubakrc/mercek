@@ -127,7 +127,7 @@ with st.sidebar:
 st.title("🔍 Mercek")
 st.markdown("Finansal raporları sizin için okuyan yapay zekâ araştırma asistanı. "
             "Her rakam tablolardan hesaplanır, her açıklama dipnot ve sayfa numarasıyla gelir.")
-st.info("Eğitim amaçlı bir projedir, **yatırım tavsiyesi değildir.**", icon="ℹ️")
+
 
 for msg in st.session_state.history:
     with st.chat_message(msg["role"]):
