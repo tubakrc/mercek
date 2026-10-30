@@ -51,8 +51,8 @@ st.markdown("""
 [data-testid="stSidebar"] { background-color: #e1eda5; }
 [data-testid="stSidebar"] * { color: #1F1A1C; }
 h1, h2, h3 { color: #6E1024; }
-.stButton > button { background-color: #d45470; color: #EEF2DA; border: none; }
-.stButton > button:hover { background-color: #B7C86F; color: #B7C86F; }
+.stButton > button { background-color: #2D198A; color: #EEF2DA; border: none; }
+.stButton > button:hover { background-color: #D2F4D; color: #D2F4D; }
 </style>
 """, unsafe_allow_html=True)
 
