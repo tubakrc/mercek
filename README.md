@@ -3,6 +3,7 @@
 **Finansal raporları sizin için okuyan yapay zeka araştırma asistanı.**
 
 Mercek; BİM, Tüpraş ve Aselsan'ın konsolide finansal raporlarını (2024 yıllık, 2025 yıllık, 2026 ilk 6 ay) ve hisse piyasa verisini analiz eder. Rakamları tablolardan **kodla hesaplar**, açıklamaları **dipnot ve sayfa numarasıyla** verir ve enflasyon muhasebesinin (TMS 29) dönem karşılaştırmalarına etkisini hesaba katar. İki mimariyle çalışır: **tek agent** (varsayılan) ve **multi-agent** (supervisor + uzman agent'lar).
+![Şirket kartı](docs/sirket_karti.png)
 
 > **Canlı demo:** `https://mercek.streamlit.app`
 >
@@ -21,12 +22,15 @@ Mercek; BİM, Tüpraş ve Aselsan'ın konsolide finansal raporlarını (2024 yı
 | **Enflasyon etkisi** | "Parasal kayıp olmasaydı vergi öncesi kâr ne olurdu?" | Parasal etki ve vergi etkisi ayrıştırılır |
 | **Piyasa verisi** | "Aselsan'ın piyasa değeri, F/K ve PD/DD oranları nedir?" | Yahoo Finance fiyatı + kodla hesaplanan oranlar |
 | **Karma** | "Borçluluk nasıl değişti ve dipnotlarda vade yapısı nasıl açıklanıyor?" | Rakam ve dipnot araçları birlikte |
+| **Şirket kartı** | Soru sormadan: üç şirketin metrikleri yan yana + risk işaretleri | Tamamen kodla hesaplanır, LLM kullanılmaz |
 
 Kapsam dışı sorular (başka şirketler), yatırım tavsiyesi istekleri ve prompt injection denemeleri ayrı katmanlarda yakalanır.
 
 ### Arayüz
 
 - Sohbet arayüzü, hazır örnek sorular ve **mimari seçici** (tek agent / multi-agent)
+- **Cevapta grafik:** Dönem karşılaştırması içeren cevapların altında seri otomatik çizilir. Sayılar LLM'den değil araç verisinden gelir; 6 aylık dönem ayrı renkte gösterilir.
+- **Şirket kartı görünümü:** Seçilen raporda üç şirketin kârlılık ve bilanço metrikleri, güncel piyasa verisi (F/K, PD/DD) ve kural tabanlı risk işaretleri (borçluluk artışı, cari oran, faaliyet kârı/net kâr ayrışması, TMS 29 etkisi, kârın nakde dönüşü, marj değişimi). Eşikler arayüzde açıkça gösterilir; işaretler tanımlayıcıdır, tavsiye değildir.
 - Canlı ilerleme durumu ("Supervisor görevleri dağıtıyor…", "Dipnotlarda aranıyor…")
 - Her cevabın altında **Dipnot kaynakları** ve **Agent adımları** panelleri: hangi agent'ın hangi aracı hangi girdiyle çağırdığı, ne döndürdüğü ve kontrol katmanlarının neyi yakaladığı
 - Oturum başına soru sınırı (public demo maliyet koruması)
@@ -257,6 +261,8 @@ Mercek/
 │   ├── config.py               # ayarlar (.env'den okunur)
 │   ├── financials.py           # oranlar, trend, net kâr köprüsü, TMS 29 katsayıları
 │   ├── market.py               # piyasa verisi, F/K ve PD/DD
+│   ├── sirket_karti.py         # şirket kartı metrikleri ve kural tabanlı risk işaretleri
+│   ├── ui.py                   # arayüz ekleri: trend grafikleri, şirket kartı görünümü
 │   ├── retriever.py            # hybrid arama (Chroma + BM25 + RRF)
 │   ├── textnorm.py             # Türkçe normalizasyon ve tokenizer
 │   ├── tools.py                # agent araçları
@@ -348,6 +354,7 @@ uv run python scripts/11_fetch_prices.py
 - **Veri erişimi:** KAP API erişimi olmadığından raporlar elle indirilmiştir. Piyasa verisi Yahoo Finance'ten gelir; resmî bir kaynak değildir.
 - **Dipnot tabloları:** Parçalarda tablo sütun başlıkları kaybolabilir; bu nedenle toplam tutarlar dipnottan alınmaz.
 - **LLM rastgeleliği:** Aynı soru farklı çalıştırmalarda farklı cevap verebilir; eval tekrarlı çalıştırılarak bu ölçülmüştür.
+- **Yeni dönem eklemek:** Rapor dönemleri birden fazla dosyada sabit tanımlıdır ve TMS 29 katsayıları ardışık raporlardan türetilir. 2026 yıllık raporlar eklenmeden önce dönem tanımlarının tek bir yapılandırmaya taşınması planlanmıştır.
 
 ---
 
