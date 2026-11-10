@@ -21,6 +21,7 @@ except Exception:  # lokalde secrets.toml yoksa
 
 from mercek import agent as agent_mod  # noqa: E402
 from mercek import config as _config  # noqa: E402
+from mercek import ui  # noqa: E402
 
 MAX_QUESTIONS = int(os.getenv("MAX_QUESTIONS_PER_SESSION", "10"))
 MAX_CHARS = 400
@@ -118,6 +119,7 @@ def get_runner(version: str, mode: str):
 
 def render_answer(out: dict) -> None:
     st.markdown(out["cevap"])
+    ui.trend_grafikleri(out.get("adimlar", []))
     if out.get("kaynaklar"):
         with st.expander(f"Dipnot kaynakları ({len(out['kaynaklar'])})"):
             for k in out["kaynaklar"]:
@@ -152,6 +154,7 @@ with st.sidebar:
     for q in ORNEK_SORULAR:
         if st.button(q, use_container_width=True):
             st.session_state.pending = q
+            st.session_state.gorunum = ui.GORUNUMLER[0]  # kart açıksa soru-cevaba geç
     st.divider()
     kalan_ph = st.empty()  # soru işlendikten sonra doldurulur (sayaç güncel olsun)
     if st.button("Sohbeti temizle", use_container_width=True):
@@ -167,6 +170,12 @@ with st.sidebar:
 st.title("🔍 Mercek")
 st.markdown("Finansal raporları sizin için okuyan yapay zeka araştırma asistanı. "
             "Her rakam tablolardan hesaplanır, her açıklama dipnot ve sayfa numarasıyla gelir.")
+
+gorunum = ui.secici("Görünüm", ui.GORUNUMLER, key="gorunum")
+if gorunum == ui.GORUNUMLER[1]:
+    ui.render_sirket_karti()
+    kalan_ph.caption(f"Bu oturumda kalan soru hakkı: **{max(MAX_QUESTIONS - st.session_state.count, 0)}/{MAX_QUESTIONS}**")
+    st.stop()
 
 
 for msg in st.session_state.history:
